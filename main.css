@@ -61,7 +61,7 @@ body {
 .veri-header > h2 {
     font-size: 30px;
     font-weight: 500;
-    font-family: bankgothic;
+    font-family: 'bankgothic';
     color: white;
     margin: auto;
     text-align: center;
@@ -103,7 +103,7 @@ body {
     padding-left: 15px;
     font-size: 10px;
     font-weight: 500;
-    font-family: bankgothic;
+    font-family: 'bankgothic';
 }
 
 .right-top > svg {
@@ -150,7 +150,7 @@ body {
     text-decoration: none;
     font-size: 12px;
     color: #C4C4C4;
-    font-family: bankgothic;
+    font-family: 'bankgothic';
 }
 
 .menu > ul > a:hover {
@@ -240,7 +240,7 @@ body {
     text-decoration: none;
     font-size: 12px;
     color: #C4C4C4;
-    font-family: bankgothic;
+    font-family: 'bankgothic';
     line-height: 4;
 }
 
@@ -259,7 +259,7 @@ body {
 .ham-dropdown {
     background-color: rgb(22, 22, 22);
     padding: 30px 40px;
-    font-family: bankgothic;
+    font-family: 'bankgothic';
     /* max-width: 190px; */
 }
 
@@ -355,7 +355,7 @@ body {
 
 .service-box > h3{
     color: white;
-    font-family: bankgothic;
+    font-family: 'bankgothic';
     text-decoration: none;
     position: relative;
     z-index: 3;
@@ -454,7 +454,7 @@ video {
 }
 
 .maintextbox > h2 {
-    font-family: bankgothic;
+    font-family: 'bankgothic';
     font-size: 22px;
     animation-name: sideh2;
     animation-duration: 1s;
@@ -473,7 +473,7 @@ video {
 }
 
 .maintextbox > h1 {
-    font-family: bankgothic;
+    font-family: 'bankgothic';
     font-size: 40px;
     padding-top: 5px;
     animation-name: sideh1;
@@ -608,7 +608,7 @@ button:hover {
 }
 
 .top-mid > h3 {
-    font-family: bankgothic;
+    font-family: 'bankgothic';
     color: white;
     font-size: 30px;
     display: flex;
@@ -681,7 +681,7 @@ button:hover {
 }
 
 .title-service > h4 {
-    font-family: bankgothic;
+    font-family: 'bankgothic';
     color: white;
     text-align: center;
     font-size: 18px;
@@ -739,7 +739,7 @@ button:hover {
 
 .thirdsection > h3 {
     color: white;
-    font-family: bankgothic;
+    font-family: 'bankgothic';
     text-align: center;
     font-size: 30px;
     display: flex;
@@ -777,7 +777,7 @@ button:hover {
 
 .signup > h4 {
     color: white;
-    font-family: bankgothic;
+    font-family: 'bankgothic';
     font-size: 22px;
     display: flex;
     justify-content: center;
@@ -880,7 +880,7 @@ footer {
     text-decoration: none;
     font-size: 12px;
     color: #C4C4C4;
-    font-family: bankgothic;
+    font-family: 'bankgothic';
     display: flex;
     align-items: initial;
     padding-bottom: 10px;
@@ -893,7 +893,7 @@ footer {
 
 .license > ul > li {
     color: #C4C4C4;
-    font-family: bankgothic;
+    font-family: 'bankgothic';
     font-size: 12px;
     text-align: left;
 }
@@ -904,7 +904,7 @@ footer {
 
 .members {
     color: #C4C4C4;
-    font-family: bankgothic;
+    font-family: 'bankgothic';
     font-size: 12px;
     display: flex;
     flex-direction: column;
@@ -925,7 +925,7 @@ footer {
 
 .footer-info > ul > li {
     color: #C4C4C4;
-    font-family: bankgothic;
+    font-family: 'bankgothic';
     font-size: 12px;
 }
 
@@ -1004,7 +1004,7 @@ footer {
 
 .about-text > h3 {
     color: white;
-    font-family: bankgothic;
+    font-family: 'bankgothic';
     font-size: 30px;
 }
 
@@ -1035,7 +1035,7 @@ footer {
 
 .max > h3 {
     color: white;
-    font-family: bankgothic;
+    font-family: 'bankgothic';
     text-align: center;
     font-size: 30px;
     display: flex;
@@ -1086,7 +1086,7 @@ footer {
 
 .mission-top > h3 {
     color: white;
-    font-family: bankgothic;
+    font-family: 'bankgothic';
     font-size: 31px;
     padding-bottom: 50px;
 }
@@ -1251,7 +1251,7 @@ select {
 }
 
 .bot-info > h4 {
-    font-family: bankgothic;
+    font-family: 'bankgothic';
 }
 
 .bot-info > p {
