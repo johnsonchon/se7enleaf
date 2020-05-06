@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'bankgothic';
-    src: url('../font/bankgothic.TTF') format('truetype'); 
+    src: url('./font/bankgothic.TTF') format('truetype'); 
 } 
 
 body {
