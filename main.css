@@ -1,4 +1,7 @@
-@font-face { font-family: bankgothic; src: url('./font/bankgothic.ttf'); } 
+@font-face {
+    font-family: 'bankgothic';
+    src: url('./font/bankgothic.ttf'); 
+} 
 
 body {
     font-family: 'Montserrat', sans-serif;
