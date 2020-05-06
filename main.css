@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'bankgothic';
-    src: url('./font/bankgothic.ttf'); 
+    src: url('./bankgothic.TTF') format('embedded-opentype'); 
 } 
 
 body {
