@@ -123,7 +123,7 @@ serviceHam.onclick = function () {
 const form = document.querySelector('#contact-form');
 const emailBtn = document.querySelector('.contact-serv');
 form.addEventListener('submit', function () {
-  // e.preventDefault();
+  e.preventDefault();
   emailBtn.remove();
   const thanks = document.createElement('p');
   thanks.innerHTML = 'Thanks for the message!';
