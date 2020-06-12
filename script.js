@@ -4,6 +4,7 @@ const year = document.getElementById('year');
 
 year.textContent = " " + new Date().getFullYear() + " ";
 
+
 // Verify Modal
 const verifyFunc = () => {
   const verify = document.querySelector('.verify-container');
@@ -60,27 +61,43 @@ x.onclick = function () {
 }
 
 // Service Menu
+const serviceHam = document.getElementById('service-button-ham');
+const hamDrop = document.getElementById('ham-service-drop');
+const hamArrow = document.getElementById('ham-arrow');
+const hamUp = document.getElementById('ham-up-arrow');
+const serviceBack = document.querySelector('.service-on');
 
 servHover.onclick = function () {
   if (serviceDrop.style.display === "none") {
     serviceDrop.style.display = "block";
     upArrow.style.display = "";
     arrow.style.display = "none";
+    serviceBack.classList.remove('display-none');
   }
 
   else if (serviceDrop.style.display === "block") {
     serviceDrop.style.display = "none";
     upArrow.style.display = "none";
     arrow.style.display = "";
-
+    serviceBack.classList.add('display-none');
   }
 
 }
 
-const serviceHam = document.getElementById('service-button-ham');
-const hamDrop = document.getElementById('ham-service-drop');
-const hamArrow = document.getElementById('ham-arrow');
-const hamUp = document.getElementById('ham-up-arrow');
+serviceBack.onclick = function () {
+  serviceDrop.style.display = "none";
+  upArrow.style.display = "none";
+  arrow.style.display = "";
+  serviceBack.classList.add('display-none');
+}
+
+// serviceBack.onclick = function () {
+//   serviceBack.classList.add('display-none');
+// }
+
+// // serviceBack.addEventListener('click', function () {
+//   serviceBack.classList.add('display-none');
+// // })
 
 serviceHam.onclick = function () {
   if (hamDrop.style.display === "none") {
@@ -97,6 +114,10 @@ serviceHam.onclick = function () {
 
   }
 }
+
+
+
+
 
 // Contact form
 const form = document.querySelector('#contact-form');
