@@ -427,7 +427,7 @@ video {
     position: absolute;
     background-color: black;
     z-index: -1;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 .mainimage {
@@ -514,7 +514,7 @@ video {
     text-align: center;
     padding-top: 10px;
     font-weight: 300;
-    color: rgb(212, 212, 212);
+    color: rgb(255, 255, 255);
     font-size: 14px;
     animation-name: mainp;
     animation-duration: 2s;
