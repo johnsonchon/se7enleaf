@@ -210,6 +210,13 @@ service.addEventListener('change', function (e) {
     whiteLabel.classList.add('no-show')
     distroForm.classList.add('no-show')
     consultForm.classList.remove('no-show')
+  } else {
+    whiteLabelNo.classList.add('no-show');
+    whiteLabelYes.classList.add('no-show');
+    bulkForm.classList.add('no-show');
+    whiteLabel.classList.add('no-show')
+    distroForm.classList.add('no-show')
+    consultForm.classList.add('no-show')
   }
 
 
