@@ -1,8 +1,8 @@
 // Year in the footer
 
-const year = document.getElementById('year');
+const year = document.querySelector('#year');
 
-year.textContent = " " + new Date().getFullYear() + " ";
+year.innerHTML = " " + new Date().getFullYear() + " ";
 
 
 // Verify Modal
@@ -50,8 +50,8 @@ hamburger.onclick = function () {
   hamgroup.style.display = "block";
   hamburger.style.display = "none";
   x.style.display = "block";
-
 }
+
 
 x.onclick = function () {
   hamgroup.style.display = "none";
@@ -84,6 +84,10 @@ servHover.onclick = function () {
 
 }
 
+serviceHam.addEventListener('click', function () {
+  hamDrop
+})
+
 serviceBack.onclick = function () {
   serviceDrop.style.display = "none";
   upArrow.style.display = "none";
@@ -99,12 +103,13 @@ serviceBack.onclick = function () {
 //   serviceBack.classList.add('display-none');
 // // })
 
+
+
 serviceHam.onclick = function () {
   if (hamDrop.style.display === "none") {
     hamDrop.style.display = "block";
     hamUp.style.display = "";
     hamArrow.style.display = "none";
-
   }
 
   else if (hamDrop.style.display === "block") {
@@ -113,6 +118,8 @@ serviceHam.onclick = function () {
     hamArrow.style.display = "";
 
   }
+
+  hamDrop.classList.toggle('do-show')
 }
 
 
@@ -129,7 +136,112 @@ form.addEventListener('submit', function () {
   thanks.innerHTML = 'Thanks for the message!';
   thanks.classList.add('thanks');
   form.appendChild(thanks);
+  window.location.href = './contact.html';
+
 });
+
+const service = document.querySelector('#service');
+
+// if (service.value == 'White-Label') {
+//   console.log('success! white label')
+// }
+
+const whiteLabel = document.querySelector('.white-label-form');
+
+service.addEventListener('change', function (e) {
+  const whiteBrand = document.querySelector('#whitebrand');
+  const whiteLabelYes = document.querySelector('#whitelabel-brand');
+  const whiteLabelNo = document.querySelector('#whitelabel-nobrand');
+  const bulkForm = document.querySelector('.bulk-form');
+  const distroForm = document.querySelector('.distro-form');
+  const distroSelect = document.querySelector('#distro-select');
+  const distroBrandYes = document.querySelector('#distro-brand');
+  const distroBrandNo = document.querySelector('#distro-nobrand');
+  const consultForm = document.querySelector('.consult-form');
+  if (e.target.value === "White-Label-Contract-Manu") {
+    whiteLabel.classList.toggle('no-show')
+    distroForm.classList.add('no-show')
+    bulkForm.classList.add('no-show');
+    consultForm.classList.add('no-show');
+    whiteBrand.addEventListener('change', function (e) {
+      if (e.target.value === "I have a brand") {
+        whiteLabelYes.classList.remove('no-show');
+        whiteLabelNo.classList.add('no-show');
+        bulkForm.classList.add('no-show');
+        distroForm.classList.add('no-show')
+
+      } else if (e.target.value === "I am introducing a new brand") {
+        whiteLabelNo.classList.remove('no-show');
+        whiteLabelYes.classList.add('no-show');
+        bulkForm.classList.add('no-show');
+        distroForm.classList.add('no-show')
+      }
+    })
+  } else if (e.target.value === "Bulk-Oil") {
+    whiteLabelNo.classList.add('no-show');
+    whiteLabelYes.classList.add('no-show');
+    bulkForm.classList.remove('no-show');
+    whiteLabel.classList.add('no-show')
+    distroForm.classList.add('no-show')
+    consultForm.classList.add('no-show')
+
+  } else if (e.target.value === "Distribution") {
+    whiteLabelNo.classList.add('no-show');
+    whiteLabelYes.classList.add('no-show');
+    bulkForm.classList.add('no-show');
+    whiteLabel.classList.add('no-show')
+    distroForm.classList.remove('no-show')
+    consultForm.classList.add('no-show')
+
+    distroSelect.addEventListener('change', function (e) {
+      if (e.target.value === "Our Brand Already Exists") {
+        distroBrandYes.classList.remove('no-show');
+        distroBrandNo.classList.add('no-show');
+      } else if (e.target.value === "We Are A New Brand") {
+        distroBrandNo.classList.remove('no-show');
+        distroBrandYes.classList.add('no-show');
+
+      }
+    })
+  } else if (e.target.value === "Consulting-Compliance") {
+    whiteLabelNo.classList.add('no-show');
+    whiteLabelYes.classList.add('no-show');
+    bulkForm.classList.add('no-show');
+    whiteLabel.classList.add('no-show')
+    distroForm.classList.add('no-show')
+    consultForm.classList.remove('no-show')
+  }
+
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

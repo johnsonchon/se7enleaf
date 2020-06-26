@@ -255,6 +255,10 @@ body {
     padding-left: 2px!important;
 }
 
+.ham-arrow-2 {
+    padding-right: 40px;
+}
+
 .ham-menu > ul > a:hover {
     color: white;
 }
@@ -351,6 +355,10 @@ body {
     padding: 20px;
 }
 
+/* .three-service > a{
+    width: 50%;
+} */
+
 
 .service-box > h3{
     color: #32A93A;
@@ -419,7 +427,7 @@ video {
     position: absolute;
     background-color: black;
     z-index: -1;
-    opacity: 0.8;
+    opacity: 0.5;
 }
 
 .mainimage {
@@ -539,7 +547,7 @@ video {
 
 button {
     height: 35px;
-    width: 130px;
+    width: 180px;
     border: none;
     margin: 5px;
     background-color: #32A93A;
@@ -657,6 +665,10 @@ button:hover {
 .link-box {
     width: 33.33%;
     text-decoration: none;
+}
+
+.link-box2 {
+    width: 50%;
 }
 
 
@@ -1147,7 +1159,7 @@ footer {
     /* box-sizing: border-box; */
 }
 
-.contact-top > form,input {
+.contact-top > form,input, textarea {
     width: 100%;
     box-sizing: border-box;
 }
@@ -1157,7 +1169,7 @@ footer {
 }
 
 ::placeholder {
-    color: rgb(164, 164, 164);;
+    color: rgb(113, 113, 113);
 }
 
 .form-input > input {
@@ -1173,6 +1185,16 @@ footer {
 
 .thanks {
     padding-top: 20px;
+}
+
+textarea {
+    padding-left: 20px;
+    margin: 5px;
+    padding-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    height: 300px;
+    color: rgb(59, 59, 59);
 }
 
 
@@ -1276,7 +1298,7 @@ select {
 
 /* White Label Page */
 .whitelabel-banner {
-    background-image: url('./image/white-banner.jpg');
+    background-image: url('./image/white-banner2.png');
 }
 
 .white-label-img > img {
@@ -1382,6 +1404,11 @@ select {
     min-height: 500px;
 }
 
+.toll-img > img {
+    width: 400px;
+    padding-left: 0;
+}
+
 
 /* End Bulk Cannabis Page */
 
@@ -1406,6 +1433,10 @@ select {
     list-style-position: inside;
 }
 
+.formu-img > img {
+    width: 120px;
+}
+
 .white-text > p {
     text-align: left;
     justify-content: left;
@@ -1420,6 +1451,10 @@ select {
 .formu-head {
     background-color: rgb(12, 12, 12);
     padding: 30px 0;
+}
+
+.custom-head {
+    background-color: #32A93A;
 }
 
 .formu-head > h3 {
@@ -1438,6 +1473,10 @@ select {
     width: 33.33%;
     text-align: center;
     margin: 0 5px;
+}
+
+.formu-50 {
+    width: 50%;
 }
 
 .formu-col > h5 {
@@ -1526,6 +1565,14 @@ select {
 
 .terpene-col > h5 {
     padding-bottom: 15px;
+}
+
+.green {
+    color: #32A93A;
+}
+
+.bulk-text > p {
+    display: block;
 }
 
 /* end Bulk Terpene page */
@@ -2203,4 +2250,65 @@ select {
     line-height: 2;
     justify-content: left;
 }
+}
+
+
+/* contact drop downs */
+.newform-area {
+    margin-top: 20px;
+}
+label{
+    color: white;
+    font-family: 'bankgothic';
+    display: block;
+    margin: 5px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.extra-drop {
+    margin: 5px;
+    margin-top: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
+.select-wrapper-full {
+    /* width: 100%; */
+    width: calc(100% - 11px);
+    /* box-sizing: border-box; */
+    /* margin-right: 5px; */
+}
+
+.service-drop2 {
+    width: 100%;
+    /* margin-right: 5px; */
+}
+
+.note {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 5px;
+}
+
+.upload {
+    /* background-color: #32A93A; */
+    width: 100%;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    /* margin-top: 15px; */
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.no-show {
+    display: none;
+}
+
+.do-show {
+    display: block;
+}
+
+.main-label {
+    font-size: 21px;
 }
