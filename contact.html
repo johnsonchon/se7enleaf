@@ -338,7 +338,7 @@
                         <div class="service-box">
                             <h3>Bulk Terpene & Flavor Blends</h3>
                             <!-- <img src="./image/splash.svg" class="splash"> -->
-                            <p>Cannabie-free, high-quality, bulk terpenes and flavor blends that can be
+                            <p>Cannabis-free, high-quality, bulk terpenes and flavor blends that can be
                                 shipped nation-wide. </p>
                         </div>
                     </a>
@@ -389,59 +389,66 @@
                 <h3>Contact Us For More Info</h3>
                 <p>We want to hear from you. Send us an email and we'll get back to you ASAP.</p>
 
-                <form id="contact-form" method="POST" action="https://formspree.io/mbjzyzjw">
-                    <div class="top-input form-input">
-                        <input type="text" placeholder="Full Name" name="name" id="name" autocomplete="off">
-                        <!-- <input type="text" placeholder="Last Name"> -->
-                    </div>
-                    <div class="middle-input form-input">
-                        <input type="text" placeholder="Company" name="company" id="company">
-                        <input type="text" placeholder="Phone Number" name="phone" id="phone">
-                    </div>
-                    <div class="bottom-input form-input email-form">
-                        <input type="text" placeholder="Email Address" name="_replyto" id="email">
+                <div class="newform-area">
+                    <div class="new-form-drop" id="whitelabel-1">
+                        <!-- <label>Do you have an existing brand or are you introducing a new brand?</label> -->
+                        <label class="main-label">Select Service You're Interested In*</label>
+                        <div class="select-wrapper select-wrapper-full">
 
-                        <div class="select-wrapper">
-                            <select name="service" class="service-drop" id="service">
-                                <option value="Select-Option">Select Service You're Interested In</option>
+                            <select name="service" class="service-drop service-drop2" id="service">
+                                <option value="Select-Option">Select Service You're Interested In*</option>
                                 <option value="White-Label-Contract-Manu">White Labeling Services/Contract Manufacturing
                                 </option>
                                 <option value="Bulk-Oil">Bulk Oil Services</option>
-                                <option value="Distribution">Distribution Services</option>
                                 <option value="Consulting-Compliance">Consulting & Compliance Services</option>
-                                <!-- <option value="Bulk-Terpene-&-Flavor-Blends">Bulk Terpene & Flavor Blends</option>
-                                <option value="Consulting-Services">Consulting Services</option>
-                                <option value="Product-Hardware">Product Hardware</option> -->
                             </select>
                             <i class="fas fa-caret-down" id="conDrop"></i>
                         </div>
                     </div>
+                </div>
 
+                <div class="new-form-drop no-show" id="whitelabel-2">
+                    <label class="main-label">White Label/Contract Manufacturing</label>
+                    <label>Do you have an existing brand or are you introducing a new brand?</label>
+
+                    <div class="select-wrapper select-wrapper-full">
+                        <select name="service" class="service-drop service-drop2" id="whitebrand">
+                            <option value="Select Option">Do you have an existing brand or are you introducing a
+                                new brand?*</option>
+                            <option value="I have a brand">I have a brand</option>
+                            <option value="I am introducing a new brand">I am introducing a new brand</option>
+
+                        </select>
+                        <i class="fas fa-caret-down" id="conDrop"></i>
+                    </div>
+                </div>
+
+                <!-- WHite Label Form -->
+                <form class="white-label-form  no-show" id="whitelabel-brand" method="POST"
+                    action="https://formspree.io/mbjzyzjw" enctype="multipart/form-data">
 
                     <!-- White label 1 -->
-                    <div class="white-label-form newform-area no-show">
-                        <div class="new-form-drop" id="whitelabel-1">
-                            <!-- <label>Do you have an existing brand or are you introducing a new brand?</label> -->
-                            <label class="main-label">White Label/Contract Manufacturing</label>
-                            <div class="select-wrapper select-wrapper-full">
-
-                                <select name="service" class="service-drop service-drop2" id="whitebrand">
-                                    <option value="Select Option">Do you have an existing brand or are you introducing a
-                                        new brand?</option>
-                                    <option value="I have a brand">I have a brand</option>
-                                    <option value="I am introducing a new brand">I am introducing a new brand</option>
-
-                                </select>
-                                <i class="fas fa-caret-down" id="conDrop"></i>
+                    <div class=" newform-area">
+                        
+                        <div class="new-form-drop" id="whitelabel-brand">
+                            <div class="top-input form-input">
+                                <input type="text" placeholder="Full Name*" name="name" id="name" autocomplete="off"
+                                    required>
+                                <!-- <input type="text" placeholder="Last Name"> -->
                             </div>
-                        </div>
+                            <div class="middle-input form-input">
+                                <input type="text" placeholder="Company*" name="company" id="company" required>
+                                <input type="text" placeholder="Phone Number*" name="phone" id="phone" required>
+                            </div>
+                            <div class="bottom-input form-input">
+                                <input type="text" placeholder="Email Address*" name="_replyto" id="email" required>
+                            </div>
 
-                        <div class="new-form-drop no-show" id="whitelabel-brand">
                             <label>Brand Company Info</label>
                             <div class="top-input form-input">
-                                <input type="text" placeholder="What is the name of the legal entity behind your brand"
+                                <input type="text" placeholder="What is the name of the legal entity behind your brand*"
                                     name="What is the name of the legal entity behind your brand" id="brand"
-                                    autocomplete="off">
+                                    autocomplete="off" required>
                                 <input type="text" placeholder="Website of Brand" name="Website of Brand"
                                     autocomplete="off">
                             </div>
@@ -455,30 +462,35 @@
                             </div>
                             <div class="top-input form-input">
                                 <input type="text"
-                                    placeholder="Annual capital amount allocated to the growth of the brand"
-                                    autocomplete="off"
-                                    name="Annual capital amount allocated to the growth of the brand">
-                                <input type="text" placeholder="Average monthly revenue being generated by the brand"
-                                    autocomplete="off" name="Average monthly revenue being generated by the brand">
+                                    placeholder="Annual capital amount allocated to the growth of the brand*"
+                                    autocomplete="off" name="Annual capital amount allocated to the growth of the brand"
+                                    required>
+                                <input type="text" placeholder="Average monthly revenue being generated by the brand*"
+                                    autocomplete="off" name="Average monthly revenue being generated by the brand"
+                                    required>
                             </div>
                             <div class="top-input form-input">
                                 <input type="text"
-                                    placeholder="How many CA State Licensed dispensaries are your products currently being sold in?"
+                                    placeholder="How many CA State Licensed dispensaries are your products currently being sold in?*"
                                     autocomplete="off"
-                                    name="How many CA State Licensed dispensaries are your products currently being sold in?">
+                                    name="How many CA State Licensed dispensaries are your products currently being sold in?"
+                                    required>
                                 <input type="text"
-                                    placeholder="What are the names of the Principals/Owners of the brand?"
-                                    autocomplete="off" name="What are the names of the Principals/Owners of the brand?">
+                                    placeholder="What are the names of the Principals/Owners of the brand?*"
+                                    autocomplete="off" name="What are the names of the Principals/Owners of the brand?"
+                                    required>
                             </div>
                             <div class="top-input form-input">
                                 <input type="text" placeholder="Are the Principals/Owners located in California?"
                                     autocomplete="off" name="Are the Principals/Owners located in California?">
-                                <input type="text" placeholder="Who is/are the PRIMARY Decision Maker(s) for the brand?"
-                                    autocomplete="off" name="Who is/are the PRIMARY Decision Maker(s) for the brand?">
+                                <input type="text"
+                                    placeholder="Who is/are the PRIMARY Decision Maker(s) for the brand?*"
+                                    autocomplete="off" name="Who is/are the PRIMARY Decision Maker(s) for the brand?"
+                                    required>
                             </div>
                             <div class="top-input form-input">
-                                <input type="text" placeholder="Do you have brand coverage in California?"
-                                    autocomplete="off" name="Do you have brand coverage in California?">
+                                <input type="text" placeholder="Do you have brand coverage in California?*"
+                                    autocomplete="off" name="Do you have brand coverage in California?" required>
                                 <input type="text"
                                     placeholder="Does your brand hold ANY California State Cannabis licensing?"
                                     autocomplete="off"
@@ -492,21 +504,24 @@
                             <label>Types of Products</label>
                             <div class="top-input form-input">
                                 <input type="text"
-                                    placeholder="What are the products you CURRENTLY have in the marketplace? Please be specific."
+                                    placeholder="What are the products you CURRENTLY have in the marketplace? Please be specific.*"
                                     autocomplete="off"
-                                    name="What are the products you CURRENTLY have in the marketplace? Please be specific.">
+                                    name="What are the products you CURRENTLY have in the marketplace? Please be specific."
+                                    required>
                             </div>
                             <div class="top-input form-input">
                                 <input type="text"
-                                    placeholder="What are the products you would like Se7enLeaf to immediately produce? Please be specific."
+                                    placeholder="What are the products you would like Se7enLeaf to immediately produce? Please be specific.*"
                                     autocomplete="off"
-                                    name="What are the products you would like Se7enLeaf to immediately produce? Please be specific.">
+                                    name="What are the products you would like Se7enLeaf to immediately produce? Please be specific."
+                                    required>
                             </div>
                             <div class="top-input form-input">
                                 <input type="text"
-                                    placeholder="Would you provide Se7enLeaf with any existing base formulations or will Se7enLeaf be formulating on your behalf?"
+                                    placeholder="Would you provide Se7enLeaf with any existing base formulations or will Se7enLeaf be formulating on your behalf?*"
                                     autocomplete="off"
-                                    name="Would you provide Se7enLeaf with any existing base formulations or will Se7enLeaf be formulating on your behalf?">
+                                    name="Would you provide Se7enLeaf with any existing base formulations or will Se7enLeaf be formulating on your behalf?"
+                                    required>
                             </div>
 
                             <label>What are the TOTAL CURRENT monthly volumes for EACH product type you have in the
@@ -555,11 +570,12 @@
 
                             <label>What are the CURRENT monthly volumes for EACH product type that SE7ENLEAF WOULD
                                 CONTRACT MANUFACTURE ON YOUR BEHALF and what is your desired WHOLESALE PRICE per
-                                unit?</label>
+                                unit?*</label>
 
                             <div class="top-input form-input">
                                 <input type="text" placeholder="Product Type" autocomplete="off"
-                                    name="What are the CURRENT monthly volumes for EACH product type that SE7ENLEAF WOULD CONTRACT MANUFACTURE ON YOUR BEHALF and what is your desired WHOLESALE PRICE per unit? Product Type:">
+                                    name="What are the CURRENT monthly volumes for EACH product type that SE7ENLEAF WOULD CONTRACT MANUFACTURE ON YOUR BEHALF and what is your desired WHOLESALE PRICE per unit? Product Type:"
+                                    required>
                                 <input type="text" placeholder="Units" autocomplete="off"
                                     name="What are the CURRENT monthly volumes for EACH product type that SE7ENLEAF WOULD CONTRACT MANUFACTURE ON YOUR BEHALF and what is your desired WHOLESALE PRICE per unit? Units:">
                                 <input type="text" placeholder="Dollar Per Unit" autocomplete="off"
@@ -599,11 +615,12 @@
                             </div>
 
                             <label>For NEW products that Se7enLeaf would contract manufacture on your behalf, what are
-                                the ANTICIPATED monthly volumes for EACH product type?</label>
+                                the ANTICIPATED monthly volumes for EACH product type?*</label>
 
                             <div class="top-input form-input">
                                 <input type="text" placeholder="Product Type" autocomplete="off"
-                                    name="For NEW products that Se7enLeaf would contract manufacture on your behalf, what are the ANTICIPATED monthly volumes for EACH product type?? Product Type:">
+                                    name="For NEW products that Se7enLeaf would contract manufacture on your behalf, what are the ANTICIPATED monthly volumes for EACH product type?? Product Type:"
+                                    required>
                                 <input type="text" placeholder="Units Months 1-3" autocomplete="off"
                                     name="For NEW products that Se7enLeaf would contract manufacture on your behalf, what are the ANTICIPATED monthly volumes for EACH product type?? Units Months 1-3:">
                                 <input type="text" placeholder="Units Months 4-8" autocomplete="off"
@@ -653,11 +670,12 @@
                             </div>
 
                             <label>For NEW products that Se7enLeaf would contract manufacture on your behalf, what is
-                                your desired WHOLESALE PRICE per unit for each product type?</label>
+                                your desired WHOLESALE PRICE per unit for each product type?*</label>
 
                             <div class="top-input form-input">
                                 <input type="text" placeholder="Product Type" autocomplete="off"
-                                    name="For NEW products that Se7enLeaf would contract manufacture on your behalf, what is your desired WHOLESALE PRICE per unit for each product type? Product Type:">
+                                    name="For NEW products that Se7enLeaf would contract manufacture on your behalf, what is your desired WHOLESALE PRICE per unit for each product type? Product Type:"
+                                    required>
                                 <input type="text" placeholder="$ Per Unit" autocomplete="off"
                                     name="For NEW products that Se7enLeaf would contract manufacture on your behalf, what is your desired WHOLESALE PRICE per unit for each product type? $ Per Unit:">
                             </div>
@@ -691,16 +709,17 @@
 
                             <div class="top-input form-input">
                                 <input type="text"
-                                    placeholder="Who is your current Distributor(s)/Transporter(s) in California?"
+                                    placeholder="Who is your current Distributor(s)/Transporter(s) in California?*"
                                     autocomplete="off"
-                                    name="Who is your current Distributor(s)/Transporter(s) in California?">
+                                    name="Who is your current Distributor(s)/Transporter(s) in California?" required>
                             </div>
 
                             <div class="top-input form-input">
                                 <input type="text"
-                                    placeholder="What areas in California does your Distributor(s)/Transporter(s) have sufficient coverage?"
+                                    placeholder="What areas in California does your Distributor(s)/Transporter(s) have sufficient coverage?*"
                                     autocomplete="off"
-                                    name="What areas in California does your Distributor(s)/Transporter(s) have sufficient coverage?">
+                                    name="What areas in California does your Distributor(s)/Transporter(s) have sufficient coverage?"
+                                    required>
                             </div>
 
                             <div class="top-input form-input">
@@ -710,9 +729,10 @@
 
                             <div class="top-input form-input">
                                 <input type="text"
-                                    placeholder="How many state licensed dispensaries does your Distributors(s) currently have access to?"
+                                    placeholder="How many state licensed dispensaries does your Distributors(s) currently have access to?*"
                                     autocomplete="off"
-                                    name="How many state licensed dispensaries does your Distributors(s) currently have access to?">
+                                    name="How many state licensed dispensaries does your Distributors(s) currently have access to?"
+                                    required>
                             </div>
 
                             <div class="top-input form-input">
@@ -723,304 +743,16 @@
                             </div>
 
                             <div class="top-input form-input">
-                                <input type="text" placeholder="What is the Sales Strategy behind the brand?"
-                                    autocomplete="off" name="What is the Sales Strategy behind the brand?">
+                                <input type="text" placeholder="What is the Sales Strategy behind the brand?*"
+                                    autocomplete="off" name="What is the Sales Strategy behind the brand?" required>
                             </div>
 
                             <div class="top-input form-input">
                                 <input type="text"
-                                    placeholder="Do you have a Sales Team on the ground or does your current Distributor(s) have a Sales Team on the ground?"
+                                    placeholder="Do you have a Sales Team on the ground or does your current Distributor(s) have a Sales Team on the ground?*"
                                     autocomplete="off"
-                                    name="Do you have a Sales Team on the ground or does your current Distributor(s) have a Sales Team on the ground?">
-                            </div>
-
-                            <div class="top-input form-input">
-                                <input type="text"
-                                    placeholder="Please add any additional notes that you think would be helpful regarding your new brand."
-                                    autocomplete="off"
-                                    name="Please add any additional notes that you think would be helpful regarding your new brand.">
-                            </div>
-
-                            <label>Attachments: Submit your brand logo, brand marketing material, brand packaging, or
-                                anything else you feel would be beneficial.</label>
-                            <input type="file" name="attachment" accept="image/png, image/jpeg" class="upload">
-
-                        </div>
-
-                        <!-- No brand ------------------------------------------------>
-
-                        <div class="new-form-drop no-show" id="whitelabel-nobrand">
-                            <label>New Brands</label>
-                            <div class="top-input form-input">
-                                <input type="text" placeholder="Do you have a name for your new brand yet?"
-                                    name="Do you have a name for your new brand yet?" autocomplete="off">
-                                <input type="text"
-                                    placeholder="What is the name of the legal entity behind your new brand?"
-                                    autocomplete="off"
-                                    name="What is the name of the legal entity behind your new brand?">
-
-                            </div>
-
-                            <div class="top-input form-input">
-                                <input type="text"
-                                    placeholder="Do you have the logo, identity, target market and messaging already developed for your new brand? Yes or No?"
-                                    autocomplete="off"
-                                    name="Do you have the logo, identity, target market and messaging already developed for your new brand?:">
-                            </div>
-
-                            <div class="top-input form-input">
-                                <input type="text"
-                                    placeholder="Do you have a pitch deck and/or marketing material for your new brand? Yes or No?"
-                                    autocomplete="off"
-                                    name="Do you have a pitch deck and/or marketing material for your new brand?:">
-                            </div>
-
-                            <div class="top-input form-input">
-                                <input type="text"
-                                    placeholder="Do you have a website and/or social media accounts already setup for your new brand? Yes or No?"
-                                    autocomplete="off"
-                                    name="Do you have a website and/or social media accounts already setup for your new brand?:">
-                            </div>
-
-                            <div class="top-input form-input">
-                                <input type="text"
-                                    placeholder="What is the capital amount being allocated to the LAUNCHING of the brand?"
-                                    autocomplete="off"
-                                    name="What is the capital amount being allocated to the LAUNCHING of the brand?:">
-                            </div>
-
-                            <div class="top-input form-input">
-                                <input type="text"
-                                    placeholder="What is the MONTHLY amount of capital being allocated to GROWING the brand after launch?"
-                                    autocomplete="off"
-                                    name="What is the MONTHLY amount of capital being allocated to GROWING the brand after launch?:">
-                            </div>
-
-                            <div class="top-input form-input">
-                                <input type="text"
-                                    placeholder="What are the names of the Principals/Owners of the brand?"
-                                    autocomplete="off"
-                                    name="What are the names of the Principals/Owners of the brand?:">
-                            </div>
-
-                            <div class="top-input form-input">
-                                <input type="text" placeholder="Are the Principals/Owners located in California?"
-                                    autocomplete="off" name="Are the Principals/Owners located in California?:">
-                            </div>
-
-                            <div class="top-input form-input">
-                                <input type="text" placeholder="Who is/are the PRIMARY Decision Maker(s) for the brand?"
-                                    autocomplete="off" name="Who is/are the PRIMARY Decision Maker(s) for the brand?:">
-                            </div>
-
-                            <div class="top-input form-input">
-                                <input type="text" placeholder="Do you or your brand plan to hold ANY California State Cannabis licensing?*
-                                " autocomplete="off" name="Do you or your brand plan to hold ANY California State Cannabis licensing?*
-                                :">
-                            </div>
-
-                            <label>What are the products you would like Se7enLeaf to immediately produce? Please be as
-                                specific as possible.</label>
-
-                            <div class="top-input form-input">
-                                <input type="text" placeholder="Product" autocomplete="off"
-                                    name="What are the products you would like Se7enLeaf to immediately produce? Please be as specific as possible. Product:">
-                                <input type="text" placeholder="Product" autocomplete="off"
-                                    name="What are the products you would like Se7enLeaf to immediately produce? Please be as specific as possible. Product:">
-                                <input type="text" placeholder="Product" autocomplete="off"
-                                    name="What are the products you would like Se7enLeaf to immediately produce? Please be as specific as possible. Product:">
-                                <input type="text" placeholder="Product" autocomplete="off"
-                                    name="What are the products you would like Se7enLeaf to immediately produce? Please be as specific as possible. Product:">
-                                <input type="text" placeholder="Product" autocomplete="off"
-                                    name="What are the products you would like Se7enLeaf to immediately produce? Please be as specific as possible. Product:">
-
-                            </div>
-
-
-                            <label>Which of these products are THC based and which are Cannabis CBD or other cannabinoid
-                                based?</label>
-
-                            <div class="top-input form-input">
-                                <input type="text" placeholder="Product" autocomplete="off"
-                                    name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? Product:">
-                                <input type="text" placeholder="THC Based" autocomplete="off"
-                                    name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? THC Based:">
-                                <input type="text" placeholder="CBD Based" autocomplete="off"
-                                    name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? CBD Based:">
-                                <input type="text" placeholder="Other" autocomplete="off"
-                                    name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? Other:">
-
-                            </div>
-                            <div class="top-input form-input">
-                                <input type="text" placeholder="Product" autocomplete="off"
-                                    name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? Product:">
-                                <input type="text" placeholder="THC Based" autocomplete="off"
-                                    name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? THC Based:">
-                                <input type="text" placeholder="CBD Based" autocomplete="off"
-                                    name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? CBD Based:">
-                                <input type="text" placeholder="Other" autocomplete="off"
-                                    name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? Other:">
-
-                            </div>
-
-                            <div class="top-input form-input">
-                                <input type="text" placeholder="Product" autocomplete="off"
-                                    name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? Product:">
-                                <input type="text" placeholder="THC Based" autocomplete="off"
-                                    name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? THC Based:">
-                                <input type="text" placeholder="CBD Based" autocomplete="off"
-                                    name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? CBD Based:">
-                                <input type="text" placeholder="Other" autocomplete="off"
-                                    name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? Other:">
-
-                            </div>
-
-                            <div class="top-input form-input">
-                                <input type="text" placeholder="Product" autocomplete="off"
-                                    name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? Product:">
-                                <input type="text" placeholder="THC Based" autocomplete="off"
-                                    name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? THC Based:">
-                                <input type="text" placeholder="CBD Based" autocomplete="off"
-                                    name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? CBD Based:">
-                                <input type="text" placeholder="Other" autocomplete="off"
-                                    name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? Other:">
-
-                            </div>
-
-                            <div class="top-input form-input">
-                                <input type="text" placeholder="Product" autocomplete="off"
-                                    name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? Product:">
-                                <input type="text" placeholder="THC Based" autocomplete="off"
-                                    name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? THC Based:">
-                                <input type="text" placeholder="CBD Based" autocomplete="off"
-                                    name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? CBD Based:">
-                                <input type="text" placeholder="Other" autocomplete="off"
-                                    name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? Other:">
-
-                            </div>
-
-                            <label>What is the desired SIZE and WHOLESALE price per unit for each product?</label>
-                            <label class="note">NOTE: example of sizes include .5g, 1g, 15ml, 30ml, etc.</label>
-
-                            <div class="top-input form-input">
-                                <input type="text" placeholder="Product" autocomplete="off"
-                                    name="What is the desired SIZE and WHOLESALE price per unit for each product? Product:">
-                                <input type="text" placeholder="Size" autocomplete="off"
-                                    name="What is the desired SIZE and WHOLESALE price per unit for each product? Size:">
-                                <input type="text" placeholder="Price Per Unit" autocomplete="off"
-                                    name="What is the desired SIZE and WHOLESALE price per unit for each product? Price Per Unit:">
-                            </div>
-                            <div class="top-input form-input">
-                                <input type="text" placeholder="Product" autocomplete="off"
-                                    name="What is the desired SIZE and WHOLESALE price per unit for each product? Product:">
-                                <input type="text" placeholder="Size" autocomplete="off"
-                                    name="What is the desired SIZE and WHOLESALE price per unit for each product? Size:">
-                                <input type="text" placeholder="Price Per Unit" autocomplete="off"
-                                    name="What is the desired SIZE and WHOLESALE price per unit for each product? Price Per Unit:">
-                            </div>
-                            <div class="top-input form-input">
-                                <input type="text" placeholder="Product" autocomplete="off"
-                                    name="What is the desired SIZE and WHOLESALE price per unit for each product? Product:">
-                                <input type="text" placeholder="Size" autocomplete="off"
-                                    name="What is the desired SIZE and WHOLESALE price per unit for each product? Size:">
-                                <input type="text" placeholder="Price Per Unit" autocomplete="off"
-                                    name="What is the desired SIZE and WHOLESALE price per unit for each product? Price Per Unit:">
-                            </div>
-                            <div class="top-input form-input">
-                                <input type="text" placeholder="Product" autocomplete="off"
-                                    name="What is the desired SIZE and WHOLESALE price per unit for each product? Product:">
-                                <input type="text" placeholder="Size" autocomplete="off"
-                                    name="What is the desired SIZE and WHOLESALE price per unit for each product? Size:">
-                                <input type="text" placeholder="Price Per Unit" autocomplete="off"
-                                    name="What is the desired SIZE and WHOLESALE price per unit for each product? Price Per Unit:">
-                            </div>
-                            <div class="top-input form-input">
-                                <input type="text" placeholder="Product" autocomplete="off"
-                                    name="What is the desired SIZE and WHOLESALE price per unit for each product? Product:">
-                                <input type="text" placeholder="Size" autocomplete="off"
-                                    name="What is the desired SIZE and WHOLESALE price per unit for each product? Size:">
-                                <input type="text" placeholder="Price Per Unit" autocomplete="off"
-                                    name="What is the desired SIZE and WHOLESALE price per unit for each product? Price Per Unit:">
-                            </div>
-
-
-                            <div class="top-input form-input">
-                                <input type="text"
-                                    placeholder="Would you provide Se7enLeaf with any base formulations or will Se7enLeaf be formulating on your behalf?"
-                                    autocomplete="off"
-                                    name="Would you provide Se7enLeaf with any base formulations or will Se7enLeaf be formulating on your behalf?">
-
-                            </div>
-
-                            <label>For products that Se7enLeaf would contract manufacture on your behalf, what are the
-                                ANTICIPATED monthly volumes for EACH product type?</label>
-
-                            <div class="top-input form-input">
-                                <input type="text" placeholder="Product" autocomplete="off"
-                                    name="For products that Se7enLeaf would contract manufacture on your behalf, what are the ANTICIPATED monthly volumes for EACH product type? Product:">
-                                <input type="text" placeholder="Units for months 1-3" autocomplete="off"
-                                    name="For products that Se7enLeaf would contract manufacture on your behalf, what are the ANTICIPATED monthly volumes for EACH product type? Units for months 1-3:">
-                                <input type="text" placeholder="Units for months 4-8" autocomplete="off"
-                                    name="For products that Se7enLeaf would contract manufacture on your behalf, what are the ANTICIPATED monthly volumes for EACH product type? Units for months 4-8:">
-                                <input type="text" placeholder="Units for months 9-12" autocomplete="off"
-                                    name="For products that Se7enLeaf would contract manufacture on your behalf, what are the ANTICIPATED monthly volumes for EACH product type? Units for months 9-12:">
-                            </div>
-
-                            <label>What is the justification behind your anticipated monthly volumes? In other words,
-                                how did you arrive at these numbers and how do you plan to meet these goals?</label>
-
-                            <div class="top-input form-input">
-                                <input type="text" placeholder="Be Descriptive" autocomplete="off"
-                                    name="What is the justification behind your anticipated monthly volumes? In other words, how did you arrive at these numbers and how do you plan to meet these goals?">
-
-                            </div>
-
-                            <label>Distribution and Sales</label>
-
-                            <div class="top-input form-input">
-                                <input type="text"
-                                    placeholder="Do you have a distributor(s) currently interested in distributing/transporting your product(s)?"
-                                    autocomplete="off"
-                                    name="Do you have a distributor(s) currently interested in distributing/transporting your product(s)?">
-
-                            </div>
-
-                            <div class="top-input form-input">
-                                <input type="text" placeholder="What is the overall Sales Strategy for the brand?"
-                                    autocomplete="off" name="What is the overall Sales Strategy for the brand?">
-
-                            </div>
-
-                            <div class="top-input form-input">
-                                <input type="text"
-                                    placeholder="Do you have your own Sales Team on the ground for the brand or will your Distributor(s) have a Sales Team on the ground to represent your brand?"
-                                    autocomplete="off"
-                                    name="Do you have your own Sales Team on the ground for the brand or will your Distributor(s) have a Sales Team on the ground to represent your brand?">
-
-                            </div>
-
-                            <div class="top-input form-input">
-                                <input type="text"
-                                    placeholder="How many Sales Representatives do you or your Distributor(s) plan to have in Northern, Southern, and Central California to promote the brand?"
-                                    autocomplete="off"
-                                    name="How many Sales Representatives do you or your Distributor(s) plan to have in Northern, Southern, and Central California to promote the brand?">
-
-                            </div>
-
-                            <div class="top-input form-input">
-                                <input type="text"
-                                    placeholder="Do you plan to have Brand Ambassadors to support your Sales Team?"
-                                    autocomplete="off"
-                                    name="Do you plan to have Brand Ambassadors to support your Sales Team?">
-
-                            </div>
-
-                            <div class="top-input form-input">
-                                <input type="text"
-                                    placeholder="What other types of marketing or sales outreach will you do for the brand?"
-                                    autocomplete="off"
-                                    name="What other types of marketing or sales outreach will you do for the brand?">
-
+                                    name="Do you have a Sales Team on the ground or does your current Distributor(s) have a Sales Team on the ground?"
+                                    required>
                             </div>
 
                             <div class="top-input form-input">
@@ -1028,7 +760,6 @@
                                     placeholder="Please add any additional notes that you think would be helpful regarding your new brand."
                                     autocomplete="off"
                                     name="Please add any additional notes that you think would be helpful regarding your new brand.">
-
                             </div>
 
                             <label>Attachments: Submit your brand logo, brand marketing material, brand packaging, or
@@ -1037,24 +768,415 @@
 
                         </div>
                     </div>
+                    <button class="serv-btn contact-serv" type="submit" value="Send">Submit</button>
+                    <input type="hidden" name="_next" value="https://johnsonchon.github.io/se7enleaf/contact.html">
+                </form>
 
+                <!-- WHite Label No brand ------------------------------------------------>
+                <form class="white-label-form no-show" id="whitelabel-nobrand" method="POST"
+                    action="https://formspree.io/xeqrlvwd" enctype="multipart/form-data">
+
+                    <div class="new-form-drop">
+                        <div class="top-input form-input">
+                            <input type="text" placeholder="Full Name*" name="name" id="name" autocomplete="off"
+                                required>
+                            <!-- <input type="text" placeholder="Last Name"> -->
+                        </div>
+                        <div class="middle-input form-input">
+                            <input type="text" placeholder="Company*" name="company" id="company" required>
+                            <input type="text" placeholder="Phone Number*" name="phone" id="phone" required>
+                        </div>
+                        <div class="bottom-input form-input">
+                            <input type="text" placeholder="Email Address*" name="_replyto" id="email" required>
+                        </div>
+
+                        <label>New Brands</label>
+                        <div class="top-input form-input">
+                            <input type="text" placeholder="Do you have a name for your new brand yet?*"
+                                name="Do you have a name for your new brand yet?" autocomplete="off" required>
+                            <input type="text"
+                                placeholder="What is the name of the legal entity behind your new brand?*"
+                                autocomplete="off" name="What is the name of the legal entity behind your new brand?"
+                                required>
+
+                        </div>
+
+                        <div class="top-input form-input">
+                            <input type="text"
+                                placeholder="Do you have the logo, identity, target market and messaging already developed for your new brand? Yes or No?*"
+                                autocomplete="off"
+                                name="Do you have the logo, identity, target market and messaging already developed for your new brand?:"
+                                required>
+                        </div>
+
+                        <div class="top-input form-input">
+                            <input type="text"
+                                placeholder="Do you have a pitch deck and/or marketing material for your new brand? Yes or No?*"
+                                autocomplete="off"
+                                name="Do you have a pitch deck and/or marketing material for your new brand?:" required>
+                        </div>
+
+                        <div class="top-input form-input">
+                            <input type="text"
+                                placeholder="Do you have a website and/or social media accounts already setup for your new brand? Yes or No?*"
+                                autocomplete="off"
+                                name="Do you have a website and/or social media accounts already setup for your new brand?:"
+                                required>
+                        </div>
+
+                        <div class="top-input form-input">
+                            <input type="text"
+                                placeholder="What is the capital amount being allocated to the LAUNCHING of the brand?*"
+                                autocomplete="off"
+                                name="What is the capital amount being allocated to the LAUNCHING of the brand?:"
+                                required>
+                        </div>
+
+                        <div class="top-input form-input">
+                            <input type="text"
+                                placeholder="What is the MONTHLY amount of capital being allocated to GROWING the brand after launch?*"
+                                autocomplete="off"
+                                name="What is the MONTHLY amount of capital being allocated to GROWING the brand after launch?:"
+                                required>
+                        </div>
+
+                        <div class="top-input form-input">
+                            <input type="text" placeholder="What are the names of the Principals/Owners of the brand?"
+                                autocomplete="off" name="What are the names of the Principals/Owners of the brand?:">
+                        </div>
+
+                        <div class="top-input form-input">
+                            <input type="text" placeholder="Are the Principals/Owners located in California?*"
+                                autocomplete="off" name="Are the Principals/Owners located in California?:" required>
+                        </div>
+
+                        <div class="top-input form-input">
+                            <input type="text" placeholder="Who is/are the PRIMARY Decision Maker(s) for the brand?*"
+                                autocomplete="off" name="Who is/are the PRIMARY Decision Maker(s) for the brand?:"
+                                required>
+                        </div>
+
+                        <div class="top-input form-input">
+                            <input type="text" placeholder="Do you or your brand plan to hold ANY California State Cannabis licensing?*
+                                " autocomplete="off" name="Do you or your brand plan to hold ANY California State Cannabis licensing?*
+                                :">
+                        </div>
+
+                        <label>What are the products you would like Se7enLeaf to immediately produce? Please be as
+                            specific as possible.*</label>
+
+                        <div class="top-input form-input">
+                            <input type="text" placeholder="Product" autocomplete="off"
+                                name="What are the products you would like Se7enLeaf to immediately produce? Please be as specific as possible. Product:"
+                                required>
+                            <input type="text" placeholder="Product" autocomplete="off"
+                                name="What are the products you would like Se7enLeaf to immediately produce? Please be as specific as possible. Product:">
+                            <input type="text" placeholder="Product" autocomplete="off"
+                                name="What are the products you would like Se7enLeaf to immediately produce? Please be as specific as possible. Product:">
+                            <input type="text" placeholder="Product" autocomplete="off"
+                                name="What are the products you would like Se7enLeaf to immediately produce? Please be as specific as possible. Product:">
+                            <input type="text" placeholder="Product" autocomplete="off"
+                                name="What are the products you would like Se7enLeaf to immediately produce? Please be as specific as possible. Product:">
+
+                        </div>
+
+
+                        <label>Which of these products are THC based and which are Cannabis CBD or other cannabinoid
+                            based?*</label>
+
+                        <div class="top-input form-input">
+                            <input type="text" placeholder="Product" autocomplete="off"
+                                name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? Product:"
+                                required>
+                            <input type="text" placeholder="THC Based" autocomplete="off"
+                                name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? THC Based:"
+                                required>
+                            <input type="text" placeholder="CBD Based" autocomplete="off"
+                                name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? CBD Based:"
+                                required>
+                            <input type="text" placeholder="Other" autocomplete="off"
+                                name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? Other:"
+                                required>
+
+                        </div>
+                        <div class="top-input form-input">
+                            <input type="text" placeholder="Product" autocomplete="off"
+                                name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? Product:">
+                            <input type="text" placeholder="THC Based" autocomplete="off"
+                                name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? THC Based:">
+                            <input type="text" placeholder="CBD Based" autocomplete="off"
+                                name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? CBD Based:">
+                            <input type="text" placeholder="Other" autocomplete="off"
+                                name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? Other:">
+
+                        </div>
+
+                        <div class="top-input form-input">
+                            <input type="text" placeholder="Product" autocomplete="off"
+                                name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? Product:">
+                            <input type="text" placeholder="THC Based" autocomplete="off"
+                                name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? THC Based:">
+                            <input type="text" placeholder="CBD Based" autocomplete="off"
+                                name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? CBD Based:">
+                            <input type="text" placeholder="Other" autocomplete="off"
+                                name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? Other:">
+
+                        </div>
+
+                        <div class="top-input form-input">
+                            <input type="text" placeholder="Product" autocomplete="off"
+                                name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? Product:">
+                            <input type="text" placeholder="THC Based" autocomplete="off"
+                                name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? THC Based:">
+                            <input type="text" placeholder="CBD Based" autocomplete="off"
+                                name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? CBD Based:">
+                            <input type="text" placeholder="Other" autocomplete="off"
+                                name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? Other:">
+
+                        </div>
+
+                        <div class="top-input form-input">
+                            <input type="text" placeholder="Product" autocomplete="off"
+                                name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? Product:">
+                            <input type="text" placeholder="THC Based" autocomplete="off"
+                                name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? THC Based:">
+                            <input type="text" placeholder="CBD Based" autocomplete="off"
+                                name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? CBD Based:">
+                            <input type="text" placeholder="Other" autocomplete="off"
+                                name="Which of these products are THC based and which are Cannabis CBD or other cannabinoid based? Other:">
+
+                        </div>
+
+                        <label>What is the desired SIZE and WHOLESALE price per unit for each product?*</label>
+                        <label class="note">NOTE: example of sizes include .5g, 1g, 15ml, 30ml, etc.</label>
+
+                        <div class="top-input form-input">
+                            <input type="text" placeholder="Product" autocomplete="off"
+                                name="What is the desired SIZE and WHOLESALE price per unit for each product? Product:"
+                                required>
+                            <input type="text" placeholder="Size" autocomplete="off"
+                                name="What is the desired SIZE and WHOLESALE price per unit for each product? Size:"
+                                required>
+                            <input type="text" placeholder="Price Per Unit" autocomplete="off"
+                                name="What is the desired SIZE and WHOLESALE price per unit for each product? Price Per Unit:"
+                                required>
+                        </div>
+                        <div class="top-input form-input">
+                            <input type="text" placeholder="Product" autocomplete="off"
+                                name="What is the desired SIZE and WHOLESALE price per unit for each product? Product:">
+                            <input type="text" placeholder="Size" autocomplete="off"
+                                name="What is the desired SIZE and WHOLESALE price per unit for each product? Size:">
+                            <input type="text" placeholder="Price Per Unit" autocomplete="off"
+                                name="What is the desired SIZE and WHOLESALE price per unit for each product? Price Per Unit:">
+                        </div>
+                        <div class="top-input form-input">
+                            <input type="text" placeholder="Product" autocomplete="off"
+                                name="What is the desired SIZE and WHOLESALE price per unit for each product? Product:">
+                            <input type="text" placeholder="Size" autocomplete="off"
+                                name="What is the desired SIZE and WHOLESALE price per unit for each product? Size:">
+                            <input type="text" placeholder="Price Per Unit" autocomplete="off"
+                                name="What is the desired SIZE and WHOLESALE price per unit for each product? Price Per Unit:">
+                        </div>
+                        <div class="top-input form-input">
+                            <input type="text" placeholder="Product" autocomplete="off"
+                                name="What is the desired SIZE and WHOLESALE price per unit for each product? Product:">
+                            <input type="text" placeholder="Size" autocomplete="off"
+                                name="What is the desired SIZE and WHOLESALE price per unit for each product? Size:">
+                            <input type="text" placeholder="Price Per Unit" autocomplete="off"
+                                name="What is the desired SIZE and WHOLESALE price per unit for each product? Price Per Unit:">
+                        </div>
+                        <div class="top-input form-input">
+                            <input type="text" placeholder="Product" autocomplete="off"
+                                name="What is the desired SIZE and WHOLESALE price per unit for each product? Product:">
+                            <input type="text" placeholder="Size" autocomplete="off"
+                                name="What is the desired SIZE and WHOLESALE price per unit for each product? Size:">
+                            <input type="text" placeholder="Price Per Unit" autocomplete="off"
+                                name="What is the desired SIZE and WHOLESALE price per unit for each product? Price Per Unit:">
+                        </div>
+
+
+                        <div class="top-input form-input">
+                            <input type="text"
+                                placeholder="Would you provide Se7enLeaf with any base formulations or will Se7enLeaf be formulating on your behalf?*"
+                                autocomplete="off"
+                                name="Would you provide Se7enLeaf with any base formulations or will Se7enLeaf be formulating on your behalf?"
+                                required>
+
+                        </div>
+
+                        <label>For products that Se7enLeaf would contract manufacture on your behalf, what are the
+                            ANTICIPATED monthly volumes for EACH product type?*</label>
+
+                        <div class="top-input form-input">
+                            <input type="text" placeholder="Product" autocomplete="off"
+                                name="For products that Se7enLeaf would contract manufacture on your behalf, what are the ANTICIPATED monthly volumes for EACH product type? Product:"
+                                required>
+                            <input type="text" placeholder="Units for months 1-3" autocomplete="off"
+                                name="For products that Se7enLeaf would contract manufacture on your behalf, what are the ANTICIPATED monthly volumes for EACH product type? Units for months 1-3:"
+                                required>
+                            <input type="text" placeholder="Units for months 4-8" autocomplete="off"
+                                name="For products that Se7enLeaf would contract manufacture on your behalf, what are the ANTICIPATED monthly volumes for EACH product type? Units for months 4-8:"
+                                required>
+                            <input type="text" placeholder="Units for months 9-12" autocomplete="off"
+                                name="For products that Se7enLeaf would contract manufacture on your behalf, what are the ANTICIPATED monthly volumes for EACH product type? Units for months 9-12:"
+                                required>
+                        </div>
+                        <div class="top-input form-input">
+                            <input type="text" placeholder="Product" autocomplete="off"
+                                name="For products that Se7enLeaf would contract manufacture on your behalf, what are the ANTICIPATED monthly volumes for EACH product type? Product:">
+                            <input type="text" placeholder="Units for months 1-3" autocomplete="off"
+                                name="For products that Se7enLeaf would contract manufacture on your behalf, what are the ANTICIPATED monthly volumes for EACH product type? Units for months 1-3:">
+                            <input type="text" placeholder="Units for months 4-8" autocomplete="off"
+                                name="For products that Se7enLeaf would contract manufacture on your behalf, what are the ANTICIPATED monthly volumes for EACH product type? Units for months 4-8:">
+                            <input type="text" placeholder="Units for months 9-12" autocomplete="off"
+                                name="For products that Se7enLeaf would contract manufacture on your behalf, what are the ANTICIPATED monthly volumes for EACH product type? Units for months 9-12:">
+                        </div>
+                        <div class="top-input form-input">
+                            <input type="text" placeholder="Product" autocomplete="off"
+                                name="For products that Se7enLeaf would contract manufacture on your behalf, what are the ANTICIPATED monthly volumes for EACH product type? Product:">
+                            <input type="text" placeholder="Units for months 1-3" autocomplete="off"
+                                name="For products that Se7enLeaf would contract manufacture on your behalf, what are the ANTICIPATED monthly volumes for EACH product type? Units for months 1-3:">
+                            <input type="text" placeholder="Units for months 4-8" autocomplete="off"
+                                name="For products that Se7enLeaf would contract manufacture on your behalf, what are the ANTICIPATED monthly volumes for EACH product type? Units for months 4-8:">
+                            <input type="text" placeholder="Units for months 9-12" autocomplete="off"
+                                name="For products that Se7enLeaf would contract manufacture on your behalf, what are the ANTICIPATED monthly volumes for EACH product type? Units for months 9-12:">
+                        </div>
+                        <div class="top-input form-input">
+                            <input type="text" placeholder="Product" autocomplete="off"
+                                name="For products that Se7enLeaf would contract manufacture on your behalf, what are the ANTICIPATED monthly volumes for EACH product type? Product:">
+                            <input type="text" placeholder="Units for months 1-3" autocomplete="off"
+                                name="For products that Se7enLeaf would contract manufacture on your behalf, what are the ANTICIPATED monthly volumes for EACH product type? Units for months 1-3:">
+                            <input type="text" placeholder="Units for months 4-8" autocomplete="off"
+                                name="For products that Se7enLeaf would contract manufacture on your behalf, what are the ANTICIPATED monthly volumes for EACH product type? Units for months 4-8:">
+                            <input type="text" placeholder="Units for months 9-12" autocomplete="off"
+                                name="For products that Se7enLeaf would contract manufacture on your behalf, what are the ANTICIPATED monthly volumes for EACH product type? Units for months 9-12:">
+                        </div>
+                        <div class="top-input form-input">
+                            <input type="text" placeholder="Product" autocomplete="off"
+                                name="For products that Se7enLeaf would contract manufacture on your behalf, what are the ANTICIPATED monthly volumes for EACH product type? Product:"
+                                required>
+                            <input type="text" placeholder="Units for months 1-3" autocomplete="off"
+                                name="For products that Se7enLeaf would contract manufacture on your behalf, what are the ANTICIPATED monthly volumes for EACH product type? Units for months 1-3:"
+                                required>
+                            <input type="text" placeholder="Units for months 4-8" autocomplete="off"
+                                name="For products that Se7enLeaf would contract manufacture on your behalf, what are the ANTICIPATED monthly volumes for EACH product type? Units for months 4-8:"
+                                required>
+                            <input type="text" placeholder="Units for months 9-12" autocomplete="off"
+                                name="For products that Se7enLeaf would contract manufacture on your behalf, what are the ANTICIPATED monthly volumes for EACH product type? Units for months 9-12:"
+                                required>
+                        </div>
+
+                        <label>What is the justification behind your anticipated monthly volumes? In other words,
+                            how did you arrive at these numbers and how do you plan to meet these goals?*</label>
+
+                        <div class="top-input form-input">
+                            <input type="text" placeholder="Be Descriptive" autocomplete="off"
+                                name="What is the justification behind your anticipated monthly volumes? In other words, how did you arrive at these numbers and how do you plan to meet these goals?"
+                                required>
+
+                        </div>
+
+                        <label>Distribution and Sales</label>
+
+                        <div class="top-input form-input">
+                            <input type="text"
+                                placeholder="Do you have a distributor(s) currently interested in distributing/transporting your product(s)?*"
+                                autocomplete="off"
+                                name="Do you have a distributor(s) currently interested in distributing/transporting your product(s)?"
+                                required>
+
+                        </div>
+
+                        <div class="top-input form-input">
+                            <input type="text" placeholder="What is the overall Sales Strategy for the brand?*"
+                                autocomplete="off" name="What is the overall Sales Strategy for the brand?" required>
+
+                        </div>
+
+                        <div class="top-input form-input">
+                            <input type="text"
+                                placeholder="Do you have your own Sales Team on the ground for the brand or will your Distributor(s) have a Sales Team on the ground to represent your brand?"
+                                autocomplete="off"
+                                name="Do you have your own Sales Team on the ground for the brand or will your Distributor(s) have a Sales Team on the ground to represent your brand?">
+
+                        </div>
+
+                        <div class="top-input form-input">
+                            <input type="text"
+                                placeholder="How many Sales Representatives do you or your Distributor(s) plan to have in Northern, Southern, and Central California to promote the brand?*"
+                                autocomplete="off"
+                                name="How many Sales Representatives do you or your Distributor(s) plan to have in Northern, Southern, and Central California to promote the brand?"
+                                required>
+
+                        </div>
+
+                        <div class="top-input form-input">
+                            <input type="text"
+                                placeholder="Do you plan to have Brand Ambassadors to support your Sales Team?"
+                                autocomplete="off"
+                                name="Do you plan to have Brand Ambassadors to support your Sales Team?">
+
+                        </div>
+
+                        <div class="top-input form-input">
+                            <input type="text"
+                                placeholder="What other types of marketing or sales outreach will you do for the brand?"
+                                autocomplete="off"
+                                name="What other types of marketing or sales outreach will you do for the brand?">
+
+                        </div>
+
+                        <div class="top-input form-input">
+                            <input type="text"
+                                placeholder="Please add any additional notes that you think would be helpful regarding your new brand."
+                                autocomplete="off"
+                                name="Please add any additional notes that you think would be helpful regarding your new brand.">
+
+                        </div>
+
+                        <label>Attachments: Submit your brand logo, brand marketing material, brand packaging, or
+                            anything else you feel would be beneficial.</label>
+                        <input type="file" name="attachment" accept="image/png, image/jpeg" class="upload">
+
+                    </div>
+
+
+                    <button class="serv-btn contact-serv" type="submit" value="Send">Submit</button>
+                    <input type="hidden" name="_next" value="https://johnsonchon.github.io/se7enleaf/contact.html">
+                </form>
+
+                <form class="bulk-form  no-show" id="contact-form" method="POST" action="https://formspree.io/xgenlrzw">
                     <!-- Bulk Oil ---------------------------------->
-                    <div class="bulk-form newform-area no-show">
+                    <div class=" newform-area">
                         <div class="new-form-drop" id="bulk-oil">
-
                             <label class="main-label">Bulk Oil Services</label>
+                            <div class="top-input form-input">
+                                <input type="text" placeholder="Full Name*" name="name" id="name" autocomplete="off"
+                                    required>
+                                <!-- <input type="text" placeholder="Last Name"> -->
+                            </div>
+                            <div class="middle-input form-input">
+                                <input type="text" placeholder="Company*" name="company" id="company" required>
+                                <input type="text" placeholder="Phone Number*" name="phone" id="phone" required>
+                            </div>
+                            <div class="bottom-input form-input">
+                                <input type="text" placeholder="Email Address*" name="_replyto" id="email" required>
+                            </div>
+
+                            <!-- <label class="main-label">Bulk Oil Services</label> -->
 
                             <div class="top-input form-input">
-                                <input type="text" placeholder="Are you looking for distillate or crude oil?"
-                                    autocomplete="off" name="Are you looking for distillate or crude oil?">
+                                <input type="text" placeholder="Are you looking for distillate or crude oil?*"
+                                    autocomplete="off" name="Are you looking for distillate or crude oil?" required>
                                 <input type="text"
-                                    placeholder="Are you a brand owner, broker, consultant or facilitator?"
-                                    autocomplete="off" name="Are you a brand owner, broker, consultant or facilitator?">
+                                    placeholder="Are you a brand owner, broker, consultant or facilitator?*"
+                                    autocomplete="off" name="Are you a brand owner, broker, consultant or facilitator?"
+                                    required>
                             </div>
 
 
                             <label>If you are a broker, consultant or facilitator, which brands that you represent will
-                                be using the oil?</label>
+                                be using the oil?*</label>
 
                             <div class="top-input form-input">
                                 <input type="text" placeholder="Brand Name" autocomplete="off"
@@ -1074,47 +1196,50 @@
                             <label>Oil Information</label>
 
                             <div class="top-input form-input">
-                                <input type="text" placeholder="What specifications are you looking for in the oil?"
-                                    autocomplete="off" name="What specifications are you looking for in the oil?">
+                                <input type="text" placeholder="What specifications are you looking for in the oil?*"
+                                    autocomplete="off" name="What specifications are you looking for in the oil?"
+                                    required>
 
                             </div>
 
                             <div class="top-input form-input">
-                                <input type="text" placeholder="THC Percentage" autocomplete="off"
-                                    name="THC Percentage">
-                                <input type="text" placeholder="Cannabis CBD Percentage" autocomplete="off"
-                                    name="Cannabis CBD Percentage">
+                                <input type="text" placeholder="THC Percentage*" autocomplete="off"
+                                    name="THC Percentage" required>
+                                <input type="text" placeholder="Cannabis CBD Percentage*" autocomplete="off"
+                                    name="Cannabis CBD Percentage" required>
                                 <input type="text" placeholder="Other" autocomplete="off" name="Other">
                             </div>
 
                             <label>How much do you require?</label>
                             <div class="top-input form-input">
-                                <input type="text" placeholder="Quantity" autocomplete="off" name="Quantity">
+                                <input type="text" placeholder="Quantity*" autocomplete="off" name="Quantity" required>
                                 <input type="text" placeholder="Unit of Measure" autocomplete="off"
-                                    name="Unit of Measure">
-                                <input type="text" placeholder="Weekly or Monthly?" autocomplete="off" name="Quantity">
-                                <input type="text" placeholder="Target price per gram" autocomplete="off"
-                                    name="Target price per gram">
+                                    name="Unit of Measure" required>
+                                <input type="text" placeholder="Weekly or Monthly?*" autocomplete="off"
+                                    name="weekly or monthly" required>
+                                <input type="text" placeholder="Target price per gram*" autocomplete="off"
+                                    name="Target price per gram" required>
 
                             </div>
 
                             <label>Business Information</label>
                             <div class="top-input form-input">
-                                <input type="text" placeholder="Can you verify proof of funds?" autocomplete="off"
-                                    name="Can you verify proof of funds?">
+                                <input type="text" placeholder="Can you verify proof of funds?*" autocomplete="off"
+                                    name="Can you verify proof of funds?" required>
                                 <input type="text"
-                                    placeholder="Are you (or your client) willing to provide deposit for the order?"
+                                    placeholder="Are you (or your client) willing to provide deposit for the order?*"
                                     autocomplete="off"
-                                    name="Are you (or your client) willing to provide deposit for the order?">
+                                    name="Are you (or your client) willing to provide deposit for the order?" required>
                             </div>
 
                             <div class="top-input form-input">
-                                <input type="text" placeholder="Are you a CA cannabis state licensed entity?"
-                                    autocomplete="off" name="Are you a CA cannabis state licensed entity?">
+                                <input type="text" placeholder="Are you a CA cannabis state licensed entity?*"
+                                    autocomplete="off" name="Are you a CA cannabis state licensed entity?" required>
                                 <input type="text"
-                                    placeholder="Do you have a Distributor(s) in place to pick up and transfer the oil?"
+                                    placeholder="Do you have a Distributor(s) in place to pick up and transfer the oil?*"
                                     autocomplete="off"
-                                    name="Do you have a Distributor(s) in place to pick up and transfer the oil?">
+                                    name="Do you have a Distributor(s) in place to pick up and transfer the oil?"
+                                    required>
 
                             </div>
 
@@ -1127,11 +1252,13 @@
                             </div>
 
                         </div>
-
                     </div>
+                    <button class="serv-btn contact-serv" type="submit" value="Send">Submit</button>
+                    <input type="hidden" name="_next" value="https://johnsonchon.github.io/se7enleaf/contact.html">
+                </form>
 
-                    <!-- Distribution ---------------------------------->
-                    <div class="distro-form newform-area no-show">
+                <!-- Distribution ---------------------------------->
+                <!-- <div class="distro-form newform-area no-show">
                         <div class="new-form-drop" id="distribution">
                             <label class="main-label">Distribution Services</label>
                             <div class="select-wrapper select-wrapper-full">
@@ -1139,7 +1266,7 @@
                                 <select name="service" class="service-drop service-drop2" id="distro-select">
                                     <option value="Select Option">Are you seeking Distribution for an existing brand
                                         already in the marketplace or a new brand you will be introducing into the
-                                        marketplace?</option>
+                                        marketplace?*</option>
                                     <option value="Our Brand Already Exists">Our Brand Already Exists</option>
                                     <option value="We Are A New Brand">We Are A New Brand</option>
 
@@ -1151,13 +1278,13 @@
                         <div class="new-form-drop no-show" id="distro-brand">
                             <label>Distribution Services for Established Brands</label>
                             <div class="top-input form-input">
-                                <input type="text" placeholder="What is the name of your brand?" autocomplete="off"
-                                    name="What is the name of your brand?">
+                                <input type="text" placeholder="What is the name of your brand?*" autocomplete="off"
+                                    name="What is the name of your brand?" required>
                             </div>
 
                             <div class="top-input form-input">
-                                <input type="text" placeholder="What is the name of the legal entity behind your brand?"
-                                    autocomplete="off" name="What is the name of the legal entity behind your brand?">
+                                <input type="text" placeholder="What is the name of the legal entity behind your brand?*"
+                                    autocomplete="off" name="What is the name of the legal entity behind your brand?" required>
                                 <input type="text" placeholder="Company Website" autocomplete="off"
                                     name="Company Website">
                             </div>
@@ -1173,23 +1300,23 @@
                             </div>
 
                             <div class="top-input form-input">
-                                <input type="text" placeholder="Average Monthly Revenue Generated" autocomplete="off"
-                                    name="Average Monthly Revenue Generated">
+                                <input type="text" placeholder="Average Monthly Revenue Generated*" autocomplete="off"
+                                    name="Average Monthly Revenue Generated" required>
 
                             </div>
 
                             <div class="top-input form-input">
                                 <input type="text"
-                                    placeholder="How many State Licensed dispensaries in California are your brand’s products currently being sold in?"
+                                    placeholder="How many State Licensed dispensaries in California are your brand’s products currently being sold in?*"
                                     autocomplete="off"
-                                    name="How many State Licensed dispensaries in California are your brand’s products currently being sold in?">
+                                    name="How many State Licensed dispensaries in California are your brand’s products currently being sold in?" required>
 
                             </div>
 
                             <div class="top-input form-input">
                                 <input type="text"
-                                    placeholder="What are the names of the Principals/Owners of the brand?"
-                                    autocomplete="off" name="What are the names of the Principals/Owners of the brand?">
+                                    placeholder="What are the names of the Principals/Owners of the brand?*"
+                                    autocomplete="off" name="What are the names of the Principals/Owners of the brand?" required>
 
                             </div>
 
@@ -1209,7 +1336,7 @@
                             <div class="select-wrapper select-wrapper-full">
 
                                 <select name="service" class="service-drop service-drop2">
-                                    <option value="Select Option">What is your current brand coverage in California?
+                                    <option value="Select Option">What is your current brand coverage in California?*
                                     </option>
                                     <option value="NorCal Only">Northern California Only</option>
                                     <option value="SoCal Only">Southern California Only</option>
@@ -1220,22 +1347,22 @@
                             </div>
 
                             <div class="top-input form-input">
-                                <input type="text" placeholder="Does your brand hold ANY California State Cannabis licensing?
+                                <input type="text" placeholder="Does your brand hold ANY California State Cannabis licensing?*
                                 " autocomplete="off" name="Does your brand hold ANY California State Cannabis licensing?
-                                ">
+                                " required>
 
                             </div>
 
                             <div class="top-input form-input">
-                                <input type="text" placeholder="What products are CURRENTLY being distributed into the marketplace? Please be specific
+                                <input type="text" placeholder="What products are CURRENTLY being distributed into the marketplace? Please be specific*
                                 " autocomplete="off" name="What products are CURRENTLY being distributed into the marketplace? Please be specific
-                                ">
+                                " required>
 
                             </div>
 
 
                             <label>What are the TOTAL CURRENT monthly volumes for EACH product type you have in the
-                                marketplace and what is the WHOLESALE PRICE per unit?</label>
+                                marketplace and what is the WHOLESALE PRICE per unit?*</label>
 
                             <div class="top-input form-input">
                                 <input type="text" placeholder="Product" autocomplete="off" name="Product">
@@ -1270,7 +1397,7 @@
 
 
                             <label>For products that Se7enLeaf WOULD DISTRIBUTE on your behalf, what are the ANTICIPATED
-                                monthly volumes for EACH product type?</label>
+                                monthly volumes for EACH product type?*</label>
 
                             <div class="top-input form-input">
                                 <input type="text" placeholder="Product" autocomplete="off"
@@ -1284,27 +1411,19 @@
 
                             </div>
 
-                            <label>For products that Se7enLeaf WOULD DISTRIBUTE on your behalf, what are the ANTICIPATED
-                                monthly volumes for EACH product type?</label>
-                            <div class="top-input form-input">
-                                <input type="text" placeholder="Anticipated monthly volumes and why?" autocomplete="off"
-                                    name="For products that Se7enLeaf WOULD DISTRIBUTE on your behalf, what are the ANTICIPATED
-                            monthly volumes for EACH product type?">
-                            </div>
-
                             <label>Distribution and Storage</label>
                             <div class="top-input form-input">
                                 <input type="text"
-                                    placeholder="Are you interested in full service distribution or a fulfillment only service?"
+                                    placeholder="Are you interested in full service distribution or a fulfillment only service?*"
                                     autocomplete="off"
-                                    name="Are you interested in full service distribution or a fulfillment only service?">
+                                    name="Are you interested in full service distribution or a fulfillment only service?" required>
                             </div>
 
                             <div class="top-input form-input">
                                 <input type="text"
-                                    placeholder="How much storage space / square footage would you require from Se7enLeaf in order to house your products on a monthly basis?"
+                                    placeholder="How much storage space / square footage would you require from Se7enLeaf in order to house your products on a monthly basis?*"
                                     autocomplete="off"
-                                    name="How much storage space / square footage would you require from Se7enLeaf in order to house your products on a monthly basis?">
+                                    name="How much storage space / square footage would you require from Se7enLeaf in order to house your products on a monthly basis?" required>
                             </div>
 
                             <div class="top-input form-input">
@@ -1327,15 +1446,15 @@
                             </div>
 
                             <div class="top-input form-input">
-                                <input type="text" placeholder="What is the overall Sales Strategy for the brand?"
-                                    autocomplete="off" name="What is the overall Sales Strategy for the brand?">
+                                <input type="text" placeholder="What is the overall Sales Strategy for the brand?*"
+                                    autocomplete="off" name="What is the overall Sales Strategy for the brand?" required>
                             </div>
 
                             <div class="top-input form-input">
                                 <input type="text"
-                                    placeholder="Do you have your own Sales Team on the ground for the brand or would your Distributor(s) have a Sales Team on the ground to represent your brand?"
+                                    placeholder="Do you have your own Sales Team on the ground for the brand or would your Distributor(s) have a Sales Team on the ground to represent your brand?*"
                                     autocomplete="off"
-                                    name="Do you have your own Sales Team on the ground for the brand or would your Distributor(s) have a Sales Team on the ground to represent your brand?">
+                                    name="Do you have your own Sales Team on the ground for the brand or would your Distributor(s) have a Sales Team on the ground to represent your brand?" required>
                             </div>
 
                             <div class="top-input form-input">
@@ -1367,49 +1486,49 @@
                             <label>Attachments: Submit assets along with this questionnaire.</label>
                             <input type="file" name="attachment" accept="image/png, image/jpeg" class="upload">
 
-                        </div>
+                        </div> -->
 
-                        <!-- Distro No Brand ----------------------------------------->
-                        <div class="new-form-drop no-show" id="distro-nobrand">
+                <!-- Distro No Brand ----------------------------------------->
+                <!-- <div class="new-form-drop no-show" id="distro-nobrand">
                             <label>Distribution Services for New Brands</label>
                             <div class="top-input form-input">
-                                <input type="text" placeholder="Do you have a name for your new brand yet?"
-                                    autocomplete="off" name="Do you have a name for your new brand yet?">
+                                <input type="text" placeholder="Do you have a name for your new brand yet?*"
+                                    autocomplete="off" name="Do you have a name for your new brand yet?" required>
                             </div>
 
                             <div class="top-input form-input">
-                                <input type="text" placeholder="What is the name of the legal entity behind your brand?"
-                                    autocomplete="off" name="What is the name of the legal entity behind your brand?">
+                                <input type="text" placeholder="What is the name of the legal entity behind your brand?*"
+                                    autocomplete="off" name="What is the name of the legal entity behind your brand?" required>
                             </div>
 
                             <div class="top-input form-input">
                                 <input type="text"
-                                    placeholder="Do you have the logo, identity, target market and messaging already developed for your new brand?"
+                                    placeholder="Do you have the logo, identity, target market and messaging already developed for your new brand?*"
                                     autocomplete="off"
-                                    name="Do you have the logo, identity, target market and messaging already developed for your new brand?">
+                                    name="Do you have the logo, identity, target market and messaging already developed for your new brand?" required>
 
                             </div>
 
                             <div class="top-input form-input">
                                 <input type="text"
-                                    placeholder="Do you have a pitch deck and/or marketing material for your new brand?"
+                                    placeholder="Do you have a pitch deck and/or marketing material for your new brand?*"
                                     autocomplete="off"
-                                    name="Do you have a pitch deck and/or marketing material for your new brand?">
+                                    name="Do you have a pitch deck and/or marketing material for your new brand?" required>
 
                             </div>
 
                             <div class="top-input form-input">
                                 <input type="text"
-                                    placeholder="Do you have a website and/or social media accounts already setup for your new brand?"
+                                    placeholder="Do you have a website and/or social media accounts already setup for your new brand?*"
                                     autocomplete="off"
-                                    name="Do you have a website and/or social media accounts already setup for your new brand?">
+                                    name="Do you have a website and/or social media accounts already setup for your new brand?" required>
 
                             </div>
 
                             <div class="top-input form-input">
                                 <input type="text"
-                                    placeholder="What are the names of the Principals/Owners of the brand?"
-                                    autocomplete="off" name="What are the names of the Principals/Owners of the brand?">
+                                    placeholder="What are the names of the Principals/Owners of the brand?*"
+                                    autocomplete="off" name="What are the names of the Principals/Owners of the brand?" required>
 
                             </div>
 
@@ -1429,50 +1548,50 @@
                             </div>
 
                             <div class="top-input form-input">
-                                <input type="text" placeholder="What is the capital amount being allocated to the LAUNCHING of the brand?
+                                <input type="text" placeholder="What is the capital amount being allocated to the LAUNCHING of the brand?*
                                 " autocomplete="off" name="What is the capital amount being allocated to the LAUNCHING of the brand?
-                                ">
+                                " required>
 
                             </div>
 
                             <div class="top-input form-input">
-                                <input type="text" placeholder="What is the MONTHLY amount of capital being allocated to GROWING the brand after launch?
+                                <input type="text" placeholder="What is the MONTHLY amount of capital being allocated to GROWING the brand after launch?*
                                 " autocomplete="off" name="What is the MONTHLY amount of capital being allocated to GROWING the brand after launch?
-                                ">
+                                " required>
 
                             </div>
 
                             <div class="top-input form-input">
-                                <input type="text" placeholder="What are the names of the Principals/Owners of the brand?
+                                <input type="text" placeholder="What are the names of the Principals/Owners of the brand?*
                                 " autocomplete="off" name="What are the names of the Principals/Owners of the brand?
-                                ">
+                                " required>
 
                             </div>
 
                             <div class="top-input form-input">
-                                <input type="text" placeholder="Are the Principals/Owners located in California?
+                                <input type="text" placeholder="Are the Principals/Owners located in California?*
                                 " autocomplete="off" name="Are the Principals/Owners located in California?
-                                ">
+                                " required>
 
                             </div>
 
                             <div class="top-input form-input">
-                                <input type="text" placeholder="Who is/are the PRIMARY Decision Maker(s) for the brand?
+                                <input type="text" placeholder="Who is/are the PRIMARY Decision Maker(s) for the brand?*
                                 " autocomplete="off" name="Who is/are the PRIMARY Decision Maker(s) for the brand?
-                                ">
+                                " required>
 
                             </div>
 
                             <div class="top-input form-input">
-                                <input type="text" placeholder="Do you or your brand plan to hold ANY California State Cannabis licensing?
+                                <input type="text" placeholder="Do you or your brand plan to hold ANY California State Cannabis licensing?*
                                 " autocomplete="off" name="Do you or your brand plan to hold ANY California State Cannabis licensing?
-                                ">
+                                " required>
 
                             </div>
 
 
                             <label>What are the products you would like Se7enLeaf to distribute and what is the desired
-                                WHOLESALE price per unit? Please be as specific as possible.</label>
+                                WHOLESALE price per unit? Please be as specific as possible.*</label>
 
                             <div class="top-input form-input">
                                 <input type="text" placeholder="Product" autocomplete="off"
@@ -1517,7 +1636,7 @@
 
 
                             <label>For products that Se7enLeaf WOULD DISTRIBUTE on your behalf, what are the ANTICIPATED
-                                monthly volumes for EACH product type?</label>
+                                monthly volumes for EACH product type?*</label>
 
                             <div class="top-input form-input">
                                 <input type="text" placeholder="Product" autocomplete="off"
@@ -1572,7 +1691,7 @@
 
 
                             <label>What is the justification behind your anticipated monthly volumes? In other words,
-                                how did you arrive at these numbers and how do you plan to meet them?</label>
+                                how did you arrive at these numbers and how do you plan to meet them?*</label>
                             <div class="top-input form-input">
                                 <input type="text" placeholder="Please explain in detail" autocomplete="off"
                                     name="What is the justification behind your anticipated monthly volumes? In other words, how did you arrive at these numbers and how do you plan to meet them?">
@@ -1581,43 +1700,43 @@
                             <label>Distribution and Storage</label>
                             <div class="top-input form-input">
                                 <input type="text"
-                                    placeholder="Are you interested in full service distribution or a fulfillment only service?"
+                                    placeholder="Are you interested in full service distribution or a fulfillment only service?*"
                                     autocomplete="off"
-                                    name="Are you interested in full service distribution or a fulfillment only service?">
+                                    name="Are you interested in full service distribution or a fulfillment only service?" required>
                             </div>
 
                             <div class="top-input form-input">
                                 <input type="text"
-                                    placeholder="How much storage space / square footage would you require from Se7enLeaf in order to house your products on a monthly basis?"
+                                    placeholder="How much storage space / square footage would you require from Se7enLeaf in order to house your products on a monthly basis?*"
                                     autocomplete="off"
-                                    name="How much storage space / square footage would you require from Se7enLeaf in order to house your products on a monthly basis?">
+                                    name="How much storage space / square footage would you require from Se7enLeaf in order to house your products on a monthly basis?" required>
                             </div>
 
                             <div class="top-input form-input">
                                 <input type="text"
-                                    placeholder="Do you have any distributors currently interested in distributing/transporting your product?"
+                                    placeholder="Do you have any distributors currently interested in distributing/transporting your product?*"
                                     autocomplete="off"
-                                    name="Do you have any distributors currently interested in distributing/transporting your product?">
+                                    name="Do you have any distributors currently interested in distributing/transporting your product?" required>
                             </div>
 
 
                             <div class="top-input form-input">
-                                <input type="text" placeholder="What is the overall Sales Strategy for the brand?"
-                                    autocomplete="off" name="What is the overall Sales Strategy for the brand?">
-                            </div>
-
-                            <div class="top-input form-input">
-                                <input type="text"
-                                    placeholder="Do you have your own Sales Team on the ground for the brand or would your Distributor(s) have a Sales Team on the ground to represent your brand?"
-                                    autocomplete="off"
-                                    name="Do you have your own Sales Team on the ground for the brand or would your Distributor(s) have a Sales Team on the ground to represent your brand?">
+                                <input type="text" placeholder="What is the overall Sales Strategy for the brand?*"
+                                    autocomplete="off" name="What is the overall Sales Strategy for the brand?" required>
                             </div>
 
                             <div class="top-input form-input">
                                 <input type="text"
-                                    placeholder="How many Sales Representatives do you or your Distributor(s) plan to have in Northern, Southern, and Central California to promote the brand?"
+                                    placeholder="Do you have your own Sales Team on the ground for the brand or would your Distributor(s) have a Sales Team on the ground to represent your brand?*"
                                     autocomplete="off"
-                                    name="How many Sales Representatives do you or your Distributor(s) plan to have in Northern, Southern, and Central California to promote the brand?">
+                                    name="Do you have your own Sales Team on the ground for the brand or would your Distributor(s) have a Sales Team on the ground to represent your brand?" required>
+                            </div>
+
+                            <div class="top-input form-input">
+                                <input type="text"
+                                    placeholder="How many Sales Representatives do you or your Distributor(s) plan to have in Northern, Southern, and Central California to promote the brand?*"
+                                    autocomplete="off"
+                                    name="How many Sales Representatives do you or your Distributor(s) plan to have in Northern, Southern, and Central California to promote the brand?" required>
                             </div>
 
                             <div class="top-input form-input">
@@ -1645,35 +1764,51 @@
                             <label>Attachments: Submit assets along with this questionnaire.</label>
                             <input type="file" name="attachment" accept="image/png, image/jpeg" class="upload">
 
-                        </div>
+                        </div> 
 
-                    </div>
+                    </div> -->
 
 
-                    <!-- Consulting & Compliance ---------------------------------->
-                    <div class="consult-form newform-area no-show">
-                        <div class="new-form-drop" id="consult-form">
+                <!-- Consulting & Compliance ---------------------------------->
+                <form class="consult-form  no-show" id="consult-form" method="POST"
+                    action="https://formspree.io/meqrlvdd">
+                    <div class="newform-area">
+                        <div class="new-form-drop">
 
                             <label class="main-label">Consulting and Compliance Services</label>
 
                             <div class="top-input form-input">
-                               <textarea placeholder="How Can Se7enLeaf Help?" name="How Can Se7enLeaf Help?"></textarea>
+                                <input type="text" placeholder="Full Name*" name="name" id="name" autocomplete="off"
+                                    required>
+                                <!-- <input type="text" placeholder="Last Name"> -->
+                            </div>
+                            <div class="middle-input form-input">
+                                <input type="text" placeholder="Company*" name="company" id="company" required>
+                                <input type="text" placeholder="Phone Number*" name="phone" id="phone" required>
+                            </div>
+                            <div class="bottom-input form-input">
+                                <input type="text" placeholder="Email Address*" name="_replyto" id="email" required>
                             </div>
 
-
+                            <div class="top-input form-input">
+                                <textarea placeholder="How Can Se7enLeaf Help?"
+                                    name="How Can Se7enLeaf Help?"></textarea>
+                            </div>
                         </div>
-
                     </div>
-
-
-
-
-                    <!-- <div class="message-input form-input">
-                        <textarea name="text" placeholder="Message"></textarea>
-                    </div> -->
                     <button class="serv-btn contact-serv" type="submit" value="Send">Submit</button>
                     <input type="hidden" name="_next" value="https://johnsonchon.github.io/se7enleaf/contact.html">
                 </form>
+
+
+
+
+
+                <!-- <div class="message-input form-input">
+                        <textarea name="text" placeholder="Message"></textarea>
+                    </div> -->
+
+
 
             </div>
 

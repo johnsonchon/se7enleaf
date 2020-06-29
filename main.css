@@ -643,6 +643,9 @@ button:hover {
     justify-content: center;
     font-weight: 300;
     padding-top: 7px;
+    line-height: 1.5;
+    width: 65%;
+    margin: auto;
 }
 
 /* Section Circle Area */
@@ -1617,7 +1620,8 @@ select {
 }
 
 .career-box {
-    width: 50%;
+    width: 70%;
+    margin: auto;
 }
 
 /* end privacy page */
@@ -2311,4 +2315,13 @@ label{
 
 .main-label {
     font-size: 21px;
+}
+
+.required {
+    color: red;
+    font-size: 10px;
+}
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
 }

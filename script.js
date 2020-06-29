@@ -150,73 +150,77 @@ const whiteLabel = document.querySelector('.white-label-form');
 
 service.addEventListener('change', function (e) {
   const whiteBrand = document.querySelector('#whitebrand');
+  const whiteLabelMain = document.querySelector('#whitelabel-2')
   const whiteLabelYes = document.querySelector('#whitelabel-brand');
   const whiteLabelNo = document.querySelector('#whitelabel-nobrand');
   const bulkForm = document.querySelector('.bulk-form');
-  const distroForm = document.querySelector('.distro-form');
-  const distroSelect = document.querySelector('#distro-select');
-  const distroBrandYes = document.querySelector('#distro-brand');
-  const distroBrandNo = document.querySelector('#distro-nobrand');
+  // const distroForm = document.querySelector('.distro-form');
+  // const distroSelect = document.querySelector('#distro-select');
+  // const distroBrandYes = document.querySelector('#distro-brand');
+  // const distroBrandNo = document.querySelector('#distro-nobrand');
   const consultForm = document.querySelector('.consult-form');
   if (e.target.value === "White-Label-Contract-Manu") {
-    whiteLabel.classList.toggle('no-show')
-    distroForm.classList.add('no-show')
-    bulkForm.classList.add('no-show');
+    whiteLabelMain.classList.remove('no-show')
+    // distroForm.classList.add('no-show')
+    bulkForm.classList.toggle('no-show');
     consultForm.classList.add('no-show');
     whiteBrand.addEventListener('change', function (e) {
       if (e.target.value === "I have a brand") {
         whiteLabelYes.classList.remove('no-show');
         whiteLabelNo.classList.add('no-show');
         bulkForm.classList.add('no-show');
-        distroForm.classList.add('no-show')
+        // distroForm.classList.add('no-show')
 
       } else if (e.target.value === "I am introducing a new brand") {
         whiteLabelNo.classList.remove('no-show');
         whiteLabelYes.classList.add('no-show');
         bulkForm.classList.add('no-show');
-        distroForm.classList.add('no-show')
+        // distroForm.classList.add('no-show')
       }
     })
   } else if (e.target.value === "Bulk-Oil") {
     whiteLabelNo.classList.add('no-show');
     whiteLabelYes.classList.add('no-show');
+    whiteLabelMain.classList.add('no-show');
     bulkForm.classList.remove('no-show');
     whiteLabel.classList.add('no-show')
-    distroForm.classList.add('no-show')
+    // distroForm.classList.add('no-show')
     consultForm.classList.add('no-show')
 
-  } else if (e.target.value === "Distribution") {
-    whiteLabelNo.classList.add('no-show');
-    whiteLabelYes.classList.add('no-show');
-    bulkForm.classList.add('no-show');
-    whiteLabel.classList.add('no-show')
-    distroForm.classList.remove('no-show')
-    consultForm.classList.add('no-show')
+  // } else if (e.target.value === "Distribution") {
+  //   whiteLabelNo.classList.add('no-show');
+  //   whiteLabelYes.classList.add('no-show');
+  //   bulkForm.classList.add('no-show');
+  //   whiteLabel.classList.add('no-show')
+  //   distroForm.classList.remove('no-show')
+  //   consultForm.classList.add('no-show')
 
-    distroSelect.addEventListener('change', function (e) {
-      if (e.target.value === "Our Brand Already Exists") {
-        distroBrandYes.classList.remove('no-show');
-        distroBrandNo.classList.add('no-show');
-      } else if (e.target.value === "We Are A New Brand") {
-        distroBrandNo.classList.remove('no-show');
-        distroBrandYes.classList.add('no-show');
+  //   distroSelect.addEventListener('change', function (e) {
+  //     if (e.target.value === "Our Brand Already Exists") {
+  //       distroBrandYes.classList.remove('no-show');
+  //       distroBrandNo.classList.add('no-show');
+  //     } else if (e.target.value === "We Are A New Brand") {
+  //       distroBrandNo.classList.remove('no-show');
+  //       distroBrandYes.classList.add('no-show');
 
-      }
-    })
+  //     }
+  //   })
   } else if (e.target.value === "Consulting-Compliance") {
     whiteLabelNo.classList.add('no-show');
     whiteLabelYes.classList.add('no-show');
     bulkForm.classList.add('no-show');
     whiteLabel.classList.add('no-show')
-    distroForm.classList.add('no-show')
+    whiteLabelMain.classList.add('no-show');
+    // distroForm.classList.add('no-show')
     consultForm.classList.remove('no-show')
   } else {
     whiteLabelNo.classList.add('no-show');
     whiteLabelYes.classList.add('no-show');
     bulkForm.classList.add('no-show');
     whiteLabel.classList.add('no-show')
-    distroForm.classList.add('no-show')
-    consultForm.classList.add('no-show')
+    // distroForm.classList.add('no-show')
+    consultForm.classList.add('no-show');
+    whiteLabelMain.classList.add('no-show');
   }
 
 
