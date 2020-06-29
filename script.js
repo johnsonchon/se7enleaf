@@ -127,18 +127,18 @@ serviceHam.onclick = function () {
 
 
 // Contact form
-const form = document.querySelector('#contact-form');
-const emailBtn = document.querySelector('.contact-serv');
-form.addEventListener('submit', function () {
-  e.preventDefault();
-  emailBtn.remove();
-  const thanks = document.createElement('p');
-  thanks.innerHTML = 'Thanks for the message!';
-  thanks.classList.add('thanks');
-  form.appendChild(thanks);
-  window.location.href = './contact.html';
+// const form = document.querySelector('#contact-form');
+// const emailBtn = document.querySelector('.contact-serv');
+// form.addEventListener('submit', function () {
+//   e.preventDefault();
+//   emailBtn.remove();
+//   const thanks = document.createElement('p');
+//   thanks.innerHTML = 'Thanks for the message!';
+//   thanks.classList.add('thanks');
+//   form.appendChild(thanks);
+//   window.location.href = './contact.html';
 
-});
+// });
 
 const service = document.querySelector('#service');
 
@@ -162,7 +162,7 @@ service.addEventListener('change', function (e) {
   if (e.target.value === "White-Label-Contract-Manu") {
     whiteLabelMain.classList.remove('no-show')
     // distroForm.classList.add('no-show')
-    bulkForm.classList.toggle('no-show');
+    bulkForm.classList.add('no-show');
     consultForm.classList.add('no-show');
     whiteBrand.addEventListener('change', function (e) {
       if (e.target.value === "I have a brand") {
