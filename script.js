@@ -14,7 +14,7 @@ const verifyFunc = () => {
 
   if (sessionStorage.getItem('key') === null) {
     window.onload = () => {
-      setTimeout(modalOn, 2000);
+      setTimeout(modalOn, 10);
     };
 
     const verifyBtn = document.querySelector('.verify-btn');
