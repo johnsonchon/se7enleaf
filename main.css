@@ -2356,11 +2356,12 @@ select {
 
 .check-title {
     margin-top: 20px;
+    font-size: 14px;
 }
 
 .license-cont {
     display: flex;
-    margin-left: 5px;
+    /* margin-left: 5px; */
 }
 
 .license-check {
@@ -2382,4 +2383,17 @@ input[type=checkbox]:checked {
 
 .license-other {
     width: 75%;
+}
+
+.license50 {
+    width: 50%;
+}
+
+.license100 {
+    width: 100%;
+    margin-left: 0;
+}
+
+.license-100other {
+    margin-top: 5px;
 }

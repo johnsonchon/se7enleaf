@@ -156,7 +156,7 @@ service.addEventListener('change', function (e) {
   const bulkForm = document.querySelector('.bulk-form');
   const bulkCon = document.querySelector('.bulkcon-form');
   const copackForm = document.querySelector('#copack-form');
-  // const distroBrandYes = document.querySelector('#distro-brand');
+  const extractionForm = document.querySelector('.extraction-form');
   // const distroBrandNo = document.querySelector('#distro-nobrand');
   const consultForm = document.querySelector('.consult-form');
   if (e.target.value === "White-Label-Contract-Manu") {
@@ -166,12 +166,13 @@ service.addEventListener('change', function (e) {
     consultForm.classList.add('no-show');
     bulkCon.classList.add('no-show');
     copackForm.classList.add('no-show');
+    extractionForm.classList.add('no-show')
     whiteBrand.addEventListener('change', function (e) {
       if (e.target.value === "I have an existing brand") {
         whiteLabelYes.classList.remove('no-show');
         whiteLabelNo.classList.add('no-show');
         bulkForm.classList.add('no-show');
-        // distroForm.classList.add('no-show')
+        
 
       } else if (e.target.value === "I am introducing a new brand") {
         whiteLabelNo.classList.remove('no-show');
@@ -190,6 +191,7 @@ service.addEventListener('change', function (e) {
     consultForm.classList.add('no-show')
     bulkCon.classList.add('no-show');
     copackForm.classList.add('no-show');
+    extractionForm.classList.add('no-show')
 
   // } else if (e.target.value === "Distribution") {
   //   whiteLabelNo.classList.add('no-show');
@@ -219,6 +221,7 @@ service.addEventListener('change', function (e) {
     consultForm.classList.remove('no-show')
     bulkCon.classList.add('no-show');
     copackForm.classList.add('no-show');
+    extractionForm.classList.add('no-show')
   } 
 
   else if (e.target.value === "Bulk-Concentrates") {
@@ -231,6 +234,7 @@ service.addEventListener('change', function (e) {
     consultForm.classList.add('no-show')
     bulkCon.classList.remove('no-show');
     copackForm.classList.add('no-show');
+    extractionForm.classList.add('no-show')
   } 
 
   else if (e.target.value === "Co-Packing") {
@@ -243,6 +247,20 @@ service.addEventListener('change', function (e) {
     consultForm.classList.add('no-show')
     bulkCon.classList.add('no-show');
     copackForm.classList.remove('no-show');
+    extractionForm.classList.add('no-show')
+  } 
+
+  else if (e.target.value === "Extraction") {
+    whiteLabelNo.classList.add('no-show');
+    whiteLabelYes.classList.add('no-show');
+    bulkForm.classList.add('no-show');
+    whiteLabel.classList.add('no-show')
+    whiteLabelMain.classList.add('no-show');
+    // distroForm.classList.add('no-show')
+    consultForm.classList.add('no-show')
+    bulkCon.classList.add('no-show');
+    copackForm.classList.add('no-show');
+    extractionForm.classList.remove('no-show')
   } 
   
   else {
@@ -255,6 +273,7 @@ service.addEventListener('change', function (e) {
     whiteLabelMain.classList.add('no-show');
     bulkCon.classList.add('no-show');
     copackForm.classList.add('no-show');
+    extractionForm.classList.add('no-show')
   }
 
 
