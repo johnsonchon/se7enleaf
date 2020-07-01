@@ -1172,7 +1172,7 @@ footer {
 }
 
 ::placeholder {
-    color: rgb(113, 113, 113);
+    color: rgb(113, 113, 113)!important;
 }
 
 .form-input > input {
@@ -1184,6 +1184,10 @@ footer {
 .bot-contact {
     max-width: 1300px;
     margin: auto;
+}
+
+.input-50 {
+    width: 50%;
 }
 
 .thanks {
@@ -2324,4 +2328,58 @@ label{
 
 textarea {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+select, input {
+    border: none;
+    /* border-radius: 5px; */
+}
+
+select {
+    color: rgb(113, 113, 113)!important;
+
+}
+
+.radio-btn {
+    margin-bottom: 0;
+}
+
+.check-btn {
+    margin-right: auto;
+    text-align: left;
+    justify-content: left;
+    width: auto;
+    margin-bottom: 5px;
+    margin-left: 0;
+    cursor: pointer;
+}
+
+.check-title {
+    margin-top: 20px;
+}
+
+.license-cont {
+    display: flex;
+    margin-left: 5px;
+}
+
+.license-check {
+    width: 25%;
+}
+
+.license-cont2 {
+    margin-bottom: 20px;
+}
+
+.check::after {
+    background-color: #32A93A;
+}
+
+input[type=checkbox]:checked {
+    background-color: #32A93A;
+}
+
+
+.license-other {
+    width: 75%;
 }

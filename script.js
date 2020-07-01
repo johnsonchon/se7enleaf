@@ -154,8 +154,8 @@ service.addEventListener('change', function (e) {
   const whiteLabelYes = document.querySelector('#whitelabel-brand');
   const whiteLabelNo = document.querySelector('#whitelabel-nobrand');
   const bulkForm = document.querySelector('.bulk-form');
-  // const distroForm = document.querySelector('.distro-form');
-  // const distroSelect = document.querySelector('#distro-select');
+  const bulkCon = document.querySelector('.bulkcon-form');
+  const copackForm = document.querySelector('#copack-form');
   // const distroBrandYes = document.querySelector('#distro-brand');
   // const distroBrandNo = document.querySelector('#distro-nobrand');
   const consultForm = document.querySelector('.consult-form');
@@ -164,6 +164,8 @@ service.addEventListener('change', function (e) {
     // distroForm.classList.add('no-show')
     bulkForm.classList.add('no-show');
     consultForm.classList.add('no-show');
+    bulkCon.classList.add('no-show');
+    copackForm.classList.add('no-show');
     whiteBrand.addEventListener('change', function (e) {
       if (e.target.value === "I have a brand") {
         whiteLabelYes.classList.remove('no-show');
@@ -186,6 +188,8 @@ service.addEventListener('change', function (e) {
     whiteLabel.classList.add('no-show')
     // distroForm.classList.add('no-show')
     consultForm.classList.add('no-show')
+    bulkCon.classList.add('no-show');
+    copackForm.classList.add('no-show');
 
   // } else if (e.target.value === "Distribution") {
   //   whiteLabelNo.classList.add('no-show');
@@ -213,7 +217,35 @@ service.addEventListener('change', function (e) {
     whiteLabelMain.classList.add('no-show');
     // distroForm.classList.add('no-show')
     consultForm.classList.remove('no-show')
-  } else {
+    bulkCon.classList.add('no-show');
+    copackForm.classList.add('no-show');
+  } 
+
+  else if (e.target.value === "Bulk-Concentrates") {
+    whiteLabelNo.classList.add('no-show');
+    whiteLabelYes.classList.add('no-show');
+    bulkForm.classList.add('no-show');
+    whiteLabel.classList.add('no-show')
+    whiteLabelMain.classList.add('no-show');
+    // distroForm.classList.add('no-show')
+    consultForm.classList.add('no-show')
+    bulkCon.classList.remove('no-show');
+    copackForm.classList.add('no-show');
+  } 
+
+  else if (e.target.value === "Co-Packing") {
+    whiteLabelNo.classList.add('no-show');
+    whiteLabelYes.classList.add('no-show');
+    bulkForm.classList.add('no-show');
+    whiteLabel.classList.add('no-show')
+    whiteLabelMain.classList.add('no-show');
+    // distroForm.classList.add('no-show')
+    consultForm.classList.add('no-show')
+    bulkCon.classList.add('no-show');
+    copackForm.classList.remove('no-show');
+  } 
+  
+  else {
     whiteLabelNo.classList.add('no-show');
     whiteLabelYes.classList.add('no-show');
     bulkForm.classList.add('no-show');
@@ -221,6 +253,8 @@ service.addEventListener('change', function (e) {
     // distroForm.classList.add('no-show')
     consultForm.classList.add('no-show');
     whiteLabelMain.classList.add('no-show');
+    bulkCon.classList.add('no-show');
+    copackForm.classList.add('no-show');
   }
 
 

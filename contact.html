@@ -392,14 +392,16 @@
                 <div class="newform-area">
                     <div class="new-form-drop" id="whitelabel-1">
                         <!-- <label>Do you have an existing brand or are you introducing a new brand?</label> -->
-                        <label class="main-label">Select Service You're Interested In*</label>
+                        <label class="main-label">Select Products/Services You're Interested In*</label>
                         <div class="select-wrapper select-wrapper-full">
 
                             <select name="service" class="service-drop service-drop2" id="service">
-                                <option value="Select-Option">Select Service You're Interested In*</option>
+                                <option value="Select-Option">Select Products/Services You're Interested In*</option>
                                 <option value="White-Label-Contract-Manu">White Labeling Services/Contract Manufacturing
                                 </option>
-                                <option value="Bulk-Oil">Bulk Oil Services</option>
+                                <option value="Bulk-Oil">Bulk Oil</option>
+                                <option value="Bulk-Concentrates">Bulk Concentrates</option>
+                                <option value="Co-Packing">Co-Packing Services</option>
                                 <option value="Consulting-Compliance">Consulting & Compliance Services</option>
                             </select>
                             <i class="fas fa-caret-down" id="conDrop"></i>
@@ -429,7 +431,7 @@
 
                     <!-- White label 1 -->
                     <div class=" newform-area">
-                        
+
                         <div class="new-form-drop" id="whitelabel-brand">
                             <div class="top-input form-input">
                                 <input type="text" placeholder="Full Name*" name="name" id="name" autocomplete="off"
@@ -1149,7 +1151,7 @@
                     <!-- Bulk Oil ---------------------------------->
                     <div class=" newform-area">
                         <div class="new-form-drop">
-                            <label class="main-label">Bulk Oil Services</label>
+                            <label class="main-label">Bulk Oil</label>
                             <div class="top-input form-input">
                                 <input type="text" placeholder="Full Name*" name="name" id="name" autocomplete="off"
                                     required>
@@ -1166,16 +1168,312 @@
                             <!-- <label class="main-label">Bulk Oil Services</label> -->
 
                             <div class="top-input form-input">
-                                <input type="text" placeholder="Are you looking for distillate or crude oil?*"
-                                    autocomplete="off" name="Are you looking for distillate or crude oil?" required>
+
+                                <div class="select-wrapper select-wrapper-full">
+                                    <select name="Are you a brand owner, broker, consultant or facilitator?"
+                                        class="service-drop service-drop2">
+                                        <option value="Select Option">Are you a brand owner, broker, consultant or
+                                            facilitator?*</option>
+                                        <option value="Brand Owner">Brand Owner</option>
+                                        <option value="Broker">Broker</option>
+                                        <option value="Consultant">Consultant</option>
+                                        <option value="Facilitator">Facilitator</option>
+
+                                    </select>
+                                    <i class="fas fa-caret-down" id="conDrop"></i>
+                                </div>
+                            </div>
+
+                            <div class="top-input form-input">
+                                <div class="select-wrapper select-wrapper-full">
+                                    <select name="Do either you or your client hold a CA cannabis state license?*">
+                                        <option value="Do either you or your client hold a CA cannabis state license?*">
+                                            Do either you or your client hold a CA cannabis state license?*</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+
+                                    </select>
+                                    <i class="fas fa-caret-down" id="conDrop"></i>
+                                </div>
+
+                            </div>
+
+                            <label for="male" class="radio-btn">If yes, which license type(s)?</label>
+
+                            <div class="license-cont">
+                                <div class="license-check">
+                                    <label for="Cultivation" class="check-btn check-title">Cultivation</label>
+                                    <input type="checkbox" name="Cultivation" value="Cultivation" id="Cultivation"
+                                        class="check-btn check">
+                                </div>
+                                <div class="license-check">
+                                    <label for="Manufacturing Type 6" class="check-btn check-title">Manufacturing Type
+                                        6</label>
+                                    <input type="checkbox" name="Manufacturing Type 6" value="Manufacturing Type 6"
+                                        class="check-btn check" id="Manufacturing Type 6">
+                                </div>
+                                <div class="license-check">
+                                    <label for="Manufacturing Type 7" class="check-btn check-title">Manufacturing Type
+                                        7</label>
+                                    <input type="checkbox" name="Manufacturing Type 7" value="Manufacturing Type 7"
+                                        class="check-btn check" id="Manufacturing Type 7">
+                                </div>
+                                <div class="license-check">
+                                    <label for="Distribution" class="check-btn check-title">Distribution</label>
+                                    <input type="checkbox" name="Distribution" value="Distribution"
+                                        class="check-btn check" id="Distribution">
+                                </div>
+                            </div>
+                            <div class="license-cont license-cont2">
+                                <div class="license-check">
+                                    <label for="Transport Only" class="check-btn check-title">Transport Only</label>
+                                    <input type="checkbox" name="Transport Only" value="Transport Only"
+                                        class="check-btn check" id="Transport Only">
+                                </div>
+                                <div class="license-check">
+                                    <label for="Testing Lab" class="check-btn check-title">Testing Lab</label>
+                                    <input type="checkbox" name="Testing Lab" value="Testing Lab"
+                                        class="check-btn check" id="Testing Lab">
+                                </div>
+                                <div class="license-check">
+                                    <label for="Retail Store-Front" class="check-btn check-title">Retail
+                                        Store-Front</label>
+                                    <input type="checkbox" name="Retail Store-Front" value="Retail Store-Front"
+                                        class="check-btn check" id="Retail Store-Front">
+                                </div>
+                                <div class="license-check">
+                                    <label for="Retail Delivery" class="check-btn check-title">Retail Delivery</label>
+                                    <input type="checkbox" name="Retail Delivery" value="Retail Delivery"
+                                        class="check-btn check" id="Retail Delivery">
+                                </div>
+                            </div>
+
+                            <div class="top-input form-input">
+
+                                <div class="select-wrapper select-wrapper-full">
+                                    <select name="What type of Bulk Oil?" class="service-drop service-drop2">
+                                        <option value="Select Option">What type of Bulk Oil are you looking for?*
+                                        </option>
+                                        <option value="Distillate Oil">Distillate Oil</option>
+                                        <option value="Crude Oil">Crude Oil</option>
+                                        <option value="Both Distillate and Crude Oil">Both</option>
+
+
+                                    </select>
+                                    <i class="fas fa-caret-down" id="conDrop"></i>
+                                </div>
+                            </div>
+
+                            <label class="main-label">Distillate Oil</label>
+                            <label class="note">Note: Only fill out if you are inquiring about Distillate Oil. If not,
+                                leave blank.
+                            </label>
+
+                            <label>THC Distillate</label>
+
+                            <div class="top-input form-input">
+                                <input type="text" placeholder="What is the minimum THC% you're looking for?*"
+                                    name="What is the minimum THC% you're looking for?" autocomplete="off">
+                                <input type="text" placeholder="How many liters are you looking to purchase?*"
+                                    name="How many liters are you looking to purchase?" autocomplete="off">
+
+                            </div>
+
+                            <div class="top-input form-input">
+                                <div class="select-wrapper select-wrapper-full">
+                                    <select
+                                        name="How often will you need to purchase the above-stated volume? (Single Order, Weekly Order, Monthly Order)"
+                                        class="service-drop service-drop2">
+                                        <option
+                                            value="How often will you need to purchase the above-stated volume? (Single Order, Weekly Order, Monthly Order)">
+                                            How often will you need to purchase the above-stated volume? (Single Order,
+                                            Weekly Order, Monthly Order)
+                                        </option>
+                                        <option value="Single Order">Single Order</option>
+                                        <option value="Weekly Order">Weekly Order</option>
+                                        <option value="Monthly Order">Monthly Order</option>
+
+                                    </select>
+                                    <i class="fas fa-caret-down" id="conDrop"></i>
+                                </div>
+                            </div>
+
+                            <div class="top-input form-input">
+                                <input type="text" placeholder="What is your target price per liter (pre-tax)?"
+                                    name="What is your target price per liter (pre-tax)? " autocomplete="off">
                                 <input type="text"
-                                    placeholder="Are you a brand owner, broker, consultant or facilitator?*"
-                                    autocomplete="off" name="Are you a brand owner, broker, consultant or facilitator?"
-                                    required>
+                                    placeholder="Are there any other specifications you have for the product?"
+                                    name="Are there any other specifications you have for the product?"
+                                    autocomplete="off">
+                            </div>
+
+                            <label>CBD Distillate (Cannabis Derived)</label>
+
+                            <div class="top-input form-input">
+                                <input type="text" placeholder="What is the minimum CBD% you're looking for?"
+                                    name="What is the minimum CBD% you're looking for?" autocomplete="off">
+                                <input type="text" placeholder="How many liters are you looking to purchase?"
+                                    name="How many liters are you looking to purchase?" autocomplete="off">
+                            </div>
+
+                            <div class="top-input form-input">
+                                <div class="select-wrapper select-wrapper-full">
+                                    <select
+                                        name="How often will you need to purchase the above-stated volume? (Single Order, Weekly Order, Monthly Order)"
+                                        class="service-drop service-drop2">
+                                        <option
+                                            value="How often will you need to purchase the above-stated volume? (Single Order, Weekly Order, Monthly Order)">
+                                            How often will you need to purchase the above-stated volume? (Single Order,
+                                            Weekly Order, Monthly Order)
+                                        </option>
+                                        <option value="Single Order">Single Order</option>
+                                        <option value="Weekly Order">Weekly Order</option>
+                                        <option value="Monthly Order">Monthly Order</option>
+
+                                    </select>
+                                    <i class="fas fa-caret-down" id="conDrop"></i>
+                                </div>
+                            </div>
+
+                            <div class="top-input form-input">
+                                <input type="text" placeholder="What is your target price per liter (pre-tax)?"
+                                    name="What is your target price per liter (pre-tax)? " autocomplete="off">
+                                <input type="text"
+                                    placeholder="Are there any other specifications you have for the product?"
+                                    name="Are there any other specifications you have for the product?"
+                                    autocomplete="off">
+                            </div>
+
+                            <!-- Crude OIl -->
+
+                            <label class="main-label">Crude Oil</label>
+                            <label class="note">Note: Only fill out if you are inquiring about Crude Oil. If not,
+                                leave blank.
+                            </label>
+
+                            <label>THC</label>
+
+                            <div class="top-input form-input">
+                                <input type="text" placeholder="What is the minimum THC% you're looking for?"
+                                    name="What is the minimum THC% you're looking for?" autocomplete="off">
+
+                            </div>
+
+                            <div class="top-input form-input">
+
+                                <div class="select-wrapper select-wrapper-full">
+                                    <select name="Winterized & Decarbed or Non-Winterized & Decarbed?"
+                                        class="service-drop service-drop2">
+                                        <option value="Winterized & Decarbed or Non-Winterized & Decarbed?">Winterized &
+                                            Decarbed or Non-Winterized & Decarbed?</option>
+                                        <option value="Winterized & Decarbed">Winterized & Decarbed</option>
+                                        <option value="Non-Winterized & Decarbed">Non-Winterized & Decarbed</option>
+
+                                    </select>
+                                    <i class="fas fa-caret-down" id="conDrop"></i>
+                                </div>
+                            </div>
+
+                            <div class="top-input form-input">
+
+                                <input type="text" placeholder="How many liters are you looking to purchase?"
+                                    name="How many liters are you looking to purchase?" autocomplete="off">
+                            </div>
+
+                            <div class="top-input form-input">
+                                <input type="text"
+                                    placeholder="How often will you need to purchase the above-stated volume? (Single Order, Weekly Order, Monthly Order)"
+                                    name="How often will you need to purchase the above-stated volume? (Single Order, Weekly Order, Monthly Order)"
+                                    autocomplete="off">
+
+
+                            </div>
+                            <div class="top-input form-input">
+                                <input type="text" placeholder="What is your target price per liter (pre-tax)?"
+                                    name="What is your target price per liter (pre-tax)? " autocomplete="off">
+                                <input type="text"
+                                    placeholder="Are there any other specifications you have for the product?"
+                                    name="Are there any other specifications you have for the product?"
+                                    autocomplete="off">
+                            </div>
+
+                            <label>Cannabis Derived CBD</label>
+
+                            <div class="top-input form-input">
+                                <input type="text" placeholder="What is the minimum CBD% you're looking for?"
+                                    name="What is the minimum CBD% you're looking for?" autocomplete="off">
+                            </div>
+
+                            <div class="top-input form-input">
+
+                                <div class="select-wrapper select-wrapper-full">
+                                    <select name="Winterized & Decarbed or Non-Winterized & Decarbed?"
+                                        class="service-drop service-drop2">
+                                        <option value="Winterized & Decarbed or Non-Winterized & Decarbed?">Winterized &
+                                            Decarbed or Non-Winterized & Decarbed?</option>
+                                        <option value="Winterized & Decarbed">Winterized & Decarbed</option>
+                                        <option value="Non-Winterized & Decarbed">Non-Winterized & Decarbed</option>
+
+                                    </select>
+                                    <i class="fas fa-caret-down" id="conDrop"></i>
+                                </div>
+                            </div>
+
+                            <div class="top-input form-input">
+
+                                <input type="text" placeholder="How many liters are you looking to purchase?"
+                                    name="How many liters are you looking to purchase?" autocomplete="off">
+                            </div>
+
+                            <div class="top-input form-input">
+                                <input type="text"
+                                    placeholder="How often will you need to purchase the above-stated volume? (Single Order, Weekly Order, Monthly Order)"
+                                    name="How often will you need to purchase the above-stated volume? (Single Order, Weekly Order, Monthly Order)"
+                                    autocomplete="off">
+                            </div>
+                            <div class="top-input form-input">
+                                <input type="text" placeholder="What is your target price per liter (pre-tax)?"
+                                    name="What is your target price per liter (pre-tax)? " autocomplete="off">
+                                <input type="text"
+                                    placeholder="Are there any other specifications you have for the product?"
+                                    name="Are there any other specifications you have for the product?"
+                                    autocomplete="off">
+                            </div>
+
+                            <label>Distribution Information</label>
+                            <div class="top-input form-input">
+                                <div class="select-wrapper select-wrapper-full">
+                                    <select
+                                        name="Do you have a Distributor in place to pick up Bulk Product from Se7enLeaf?"
+                                        class="service-drop service-drop2">
+                                        <option
+                                            value="Do you have a Distributor in place to pick up Bulk Product from Se7enLeaf?">
+                                            Do you have a Distributor in place to pick up Bulk Product from Se7enLeaf?
+                                        </option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="Nod">No</option>
+
+                                    </select>
+                                    <i class="fas fa-caret-down" id="conDrop"></i>
+                                </div>
+                            </div>
+
+                            <div class="top-input form-input">
+                                <input type="text" placeholder="If so, who is your Distributor(s)?"
+                                    name="If so, who is your Distributor(s)?" autocomplete="off">
+
+                            </div>
+
+                            <div class="top-input form-input">
+                                <input type="text"
+                                    placeholder="Please add any additional notes that you think would be helpful"
+                                    name="Please add any additional notes that you think would be helpful"
+                                    autocomplete="off">
+
                             </div>
 
 
-                            <label>If you are a broker, consultant or facilitator, which brands that you represent will
+                            <!-- <label>If you are a broker, consultant, or facilitator, which brands that you represent will
                                 be using the oil?*</label>
 
                             <div class="top-input form-input">
@@ -1249,10 +1547,490 @@
                                     autocomplete="off"
                                     name="Please add any additional notes that you think would be helpful regarding your company or your clients.">
 
-                            </div>
+                            </div> -->
 
                         </div>
                     </div>
+                    <button class="serv-btn contact-serv" type="submit" value="Send">Submit</button>
+                    <input type="hidden" name="_next" value="https://johnsonchon.github.io/se7enleaf/contact.html">
+                </form>
+
+
+
+                <!-- Bulk Concentrates -->
+                <form class="bulkcon-form no-show" id="bulk-con" method="POST" action="https://formspree.io/mgenlgoy">
+                    <div class=" newform-area">
+                        <div class="new-form-drop">
+                            <label class="main-label">Bulk Concentrates</label>
+                            <div class="top-input form-input">
+                                <input type="text" placeholder="Full Name*" name="name" id="name" autocomplete="off"
+                                    required>
+                                <!-- <input type="text" placeholder="Last Name"> -->
+                            </div>
+                            <div class="middle-input form-input">
+                                <input type="text" placeholder="Company*" name="company" id="company" required>
+                                <input type="text" placeholder="Phone Number*" name="phone" id="phone" required>
+                            </div>
+                            <div class="bottom-input form-input">
+                                <input type="text" placeholder="Email Address*" name="_replyto" id="email" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="top-input form-input">
+
+                        <div class="select-wrapper select-wrapper-full">
+                            <select name="Are you a brand owner, broker, consultant or facilitator?"
+                                class="service-drop service-drop2">
+                                <option value="Select Option">Are you a brand owner, broker, consultant or
+                                    facilitator?*</option>
+                                <option value="Brand Owner">Brand Owner</option>
+                                <option value="Broker">Broker</option>
+                                <option value="Consultant">Consultant</option>
+                                <option value="Facilitator">Facilitator</option>
+
+                            </select>
+                            <i class="fas fa-caret-down" id="conDrop"></i>
+                        </div>
+                    </div>
+
+                    <div class="top-input form-input">
+                        <div class="select-wrapper select-wrapper-full">
+                            <select name="Do either you or your client hold a CA cannabis state license?*">
+                                <option value="Do either you or your client hold a CA cannabis state license?*">
+                                    Do either you or your client hold a CA cannabis state license?*</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+
+                            </select>
+                            <i class="fas fa-caret-down" id="conDrop"></i>
+                        </div>
+
+                    </div>
+
+                    <label class="radio-btn">If yes, which license type(s)?</label>
+
+                    <div class="license-cont">
+                        <div class="license-check">
+                            <label for="Cultivation2" class="check-btn check-title">Cultivation</label>
+                            <input type="checkbox" name="Cultivation" value="Cultivation" id="Cultivation2"
+                                class="check-btn check">
+                        </div>
+                        <div class="license-check">
+                            <label for="Manufacturing Type 6-2" class="check-btn check-title">Manufacturing Type
+                                6</label>
+                            <input type="checkbox" name="Manufacturing Type 6" value="Manufacturing Type 6"
+                                class="check-btn check" id="Manufacturing Type 6-2">
+                        </div>
+                        <div class="license-check">
+                            <label for="Manufacturing Type 7-2" class="check-btn check-title">Manufacturing Type
+                                7</label>
+                            <input type="checkbox" name="Manufacturing Type 7" value="Manufacturing Type 7"
+                                class="check-btn check" id="Manufacturing Type 7-2">
+                        </div>
+                        <div class="license-check">
+                            <label for="Distribution2" class="check-btn check-title">Distribution</label>
+                            <input type="checkbox" name="Distribution" value="Distribution" class="check-btn check"
+                                id="Distribution2">
+                        </div>
+                    </div>
+                    <div class="license-cont license-cont2">
+                        <div class="license-check">
+                            <label for="Transport Only2" class="check-btn check-title">Transport Only</label>
+                            <input type="checkbox" name="Transport Only" value="Transport Only" class="check-btn check"
+                                id="Transport Only2">
+                        </div>
+                        <div class="license-check">
+                            <label for="Testing Lab2" class="check-btn check-title">Testing Lab</label>
+                            <input type="checkbox" name="Testing Lab" value="Testing Lab" class="check-btn check"
+                                id="Testing Lab2">
+                        </div>
+                        <div class="license-check">
+                            <label for="Retail Store-Front2" class="check-btn check-title">Retail
+                                Store-Front</label>
+                            <input type="checkbox" name="Retail Store-Front" value="Retail Store-Front"
+                                class="check-btn check" id="Retail Store-Front2">
+                        </div>
+                        <div class="license-check">
+                            <label for="Retail Delivery2" class="check-btn check-title">Retail Delivery</label>
+                            <input type="checkbox" name="Retail Delivery" value="Retail Delivery"
+                                class="check-btn check" id="Retail Delivery2">
+                        </div>
+                    </div>
+
+                    <label class="radio-btn">What type of Bulk Concentrate(s) are you looking for?</label>
+
+                    <div class="license-cont">
+                        <div class="license-check">
+                            <label for="Live Resin2" class="check-btn check-title">Live Resin</label>
+                            <input type="checkbox" name="Live Resin" value="Live Resin" id="Live Resin2"
+                                class="check-btn check">
+                        </div>
+                        <div class="license-check">
+                            <label for="HTE / Terpene Sauce" class="check-btn check-title">HTE / Terpene Sauce</label>
+                            <input type="checkbox" name="HTE / Terpene Sauce" value="HTE / Terpene Sauce"
+                                class="check-btn check" id="HTE / Terpene Sauce">
+                        </div>
+                        <div class="license-check">
+                            <label for="Liquid Live" class="check-btn check-title">Liquid Live</label>
+                            <input type="checkbox" name="Liquid Live" value="Liquid Live" class="check-btn check"
+                                id="Liquid Live">
+                        </div>
+                        <div class="license-check">
+                            <label for="Diamonds" class="check-btn check-title">Diamonds</label>
+                            <input type="checkbox" name="Diamonds" value="Diamonds" class="check-btn check"
+                                id="Diamonds">
+                        </div>
+                    </div>
+                    <div class="license-cont">
+                        <div class="license-check">
+                            <label for="Shatter" class="check-btn check-title">Shatter</label>
+                            <input type="checkbox" name="Shatter" value="Shatter" class="check-btn check" id="Shatter">
+                        </div>
+                        <div class="license-check">
+                            <label for="Crumble or Wax" class="check-btn check-title">Crumble or Wax</label>
+                            <input type="checkbox" name="Crumble or Wax" value="Crumble or Wax" class="check-btn check"
+                                id="Crumble or Wax">
+                        </div>
+                        <div class="license-check">
+                            <label for="Sugar or Budder" class="check-btn check-title">Sugar or Budder</label>
+                            <input type="checkbox" name="Sugar or Budder" value="Sugar or Budder"
+                                class="check-btn check" id="Sugar or Budder">
+                        </div>
+                        <div class="license-check">
+                            <label for="Rosin" class="check-btn check-title">Rosin</label>
+                            <input type="checkbox" name="Rosin" value="Rosin" class="check-btn check" id="Rosin">
+                        </div>
+                    </div>
+                    <div class="license-cont license-cont2">
+                        <div class="license-check">
+                            <label for="THCA" class="check-btn check-title">THCA</label>
+                            <input type="checkbox" name="THCA" value="THCA" class="check-btn check" id="THCA">
+                        </div>
+                        <div class="license-check">
+                            <label for="RSO" class="check-btn check-title">RSO</label>
+                            <input type="checkbox" name="RSO" value="RSO" class="check-btn check" id="RSO">
+                        </div>
+                        <div class="license-check">
+                            <label for="Other" class="check-btn check-title">Other</label>
+                            <input type="checkbox" name="Other" value="Other" class="check-btn check" id="Other">
+                        </div>
+
+                    </div>
+
+                    <div class="top-input form-input">
+                        <input type="text" placeholder="How many grams are you looking to purchase?*" autocomplete="off"
+                            name="How many grams are you looking to purchase?" required>
+                    </div>
+
+                    <div class="top-input form-input">
+                        <div class="select-wrapper select-wrapper-full">
+                            <select
+                                name="How often will you need to purchase the above-stated volume? (Single Order, Weekly Order, Monthly Order)"
+                                class="service-drop service-drop2">
+                                <option
+                                    value="How often will you need to purchase the above-stated volume? (Single Order, Weekly Order, Monthly Order)">
+                                    How often will you need to purchase the above-stated volume? (Single Order, Weekly
+                                    Order, Monthly Order)
+                                </option>
+                                <option value="Single Order">Single Order</option>
+                                <option value="Weekly Order">Weekly Order</option>
+                                <option value="Monthly Order">Monthly Order</option>
+
+                            </select>
+                            <i class="fas fa-caret-down" id="conDrop"></i>
+                        </div>
+                    </div>
+
+                    <div class="top-input form-input">
+                        <input type="text" placeholder="What is your target price per gram?*" autocomplete="off"
+                            name="What is your target price per gram? " required>
+                        <input type="text" placeholder="Are there any other specifications you have for the product? *"
+                            autocomplete="off" name="Are there any other specifications you have for the product? "
+                            required>
+
+                    </div>
+
+                    <label>Distribution Information</label>
+                    <div class="top-input form-input">
+                        <div class="select-wrapper select-wrapper-full">
+                            <select name="Do you have a Distributor in place to pick up Bulk Product from Se7enLeaf?"
+                                class="service-drop service-drop2">
+                                <option
+                                    value="Do you have a Distributor in place to pick up Bulk Product from Se7enLeaf?">
+                                    Do you have a Distributor in place to pick up Bulk Product from Se7enLeaf?
+                                </option>
+                                <option value="Yes">Yes</option>
+                                <option value="Nod">No</option>
+
+                            </select>
+                            <i class="fas fa-caret-down" id="conDrop"></i>
+                        </div>
+                    </div>
+
+                    <div class="top-input form-input">
+                        <input type="text" placeholder="If so, who is your Distributor(s)?"
+                            name="If so, who is your Distributor(s)?" autocomplete="off">
+
+                    </div>
+
+                    <div class="top-input form-input">
+                        <input type="text" placeholder="Please add any additional notes that you think would be helpful"
+                            name="Please add any additional notes that you think would be helpful" autocomplete="off">
+
+                    </div>
+
+
+
+                    <button class="serv-btn contact-serv" type="submit" value="Send">Submit</button>
+                    <input type="hidden" name="_next" value="https://johnsonchon.github.io/se7enleaf/contact.html">
+                </form>
+
+                <!-- CoPacking -->
+                <form class="copack-form  no-show" id="copack-form" method="POST" action="https://formspree.io/mqkydrqz">
+                    <div class=" newform-area">
+                        <div class="new-form-drop">
+                            <label class="main-label">Co-Packing Services</label>
+                            <div class="top-input form-input">
+                                <input type="text" placeholder="Full Name*" name="name" id="name" autocomplete="off"
+                                    required>
+                                <!-- <input type="text" placeholder="Last Name"> -->
+                            </div>
+                            <div class="middle-input form-input">
+                                <input type="text" placeholder="Company*" name="company" id="company" required>
+                                <input type="text" placeholder="Phone Number*" name="phone" id="phone" required>
+                            </div>
+                            <div class="bottom-input form-input">
+                                <input type="text" placeholder="Email Address*" name="_replyto" id="email" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="top-input form-input">
+                        <div class="select-wrapper select-wrapper-full">
+                            <select name="Do either you or your brand hold a CA cannabis state license?*">
+                                <option value="Do either you or your brand hold a CA cannabis state license?*">
+                                    Do either you or your client hold a CA cannabis state license?*</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+
+                            </select>
+                            <i class="fas fa-caret-down" id="conDrop"></i>
+                        </div>
+
+                    </div>
+
+                    <label class="radio-btn">If yes, which license type(s)?</label>
+
+                    <div class="license-cont">
+                        <div class="license-check">
+                            <label for="Cultivation3" class="check-btn check-title">Cultivation</label>
+                            <input type="checkbox" name="Cultivation" value="Cultivation" id="Cultivation3"
+                                class="check-btn check">
+                        </div>
+                        <div class="license-check">
+                            <label for="Manufacturing Type 6-3" class="check-btn check-title">Manufacturing Type
+                                6</label>
+                            <input type="checkbox" name="Manufacturing Type 6" value="Manufacturing Type 6"
+                                class="check-btn check" id="Manufacturing Type 6-3">
+                        </div>
+                        <div class="license-check">
+                            <label for="Manufacturing Type 7-3" class="check-btn check-title">Manufacturing Type
+                                7</label>
+                            <input type="checkbox" name="Manufacturing Type 7" value="Manufacturing Type 7"
+                                class="check-btn check" id="Manufacturing Type 7-3">
+                        </div>
+                        <div class="license-check">
+                            <label for="Distribution3" class="check-btn check-title">Distribution</label>
+                            <input type="checkbox" name="Distribution" value="Distribution" class="check-btn check"
+                                id="Distribution3">
+                        </div>
+                    </div>
+                    <div class="license-cont license-cont2">
+                        <div class="license-check">
+                            <label for="Transport Only3" class="check-btn check-title">Transport Only</label>
+                            <input type="checkbox" name="Transport Only" value="Transport Only" class="check-btn check"
+                                id="Transport Only3">
+                        </div>
+                        <div class="license-check">
+                            <label for="Testing Lab3" class="check-btn check-title">Testing Lab</label>
+                            <input type="checkbox" name="Testing Lab" value="Testing Lab" class="check-btn check"
+                                id="Testing Lab3">
+                        </div>
+                        <div class="license-check">
+                            <label for="Retail Store-Front3" class="check-btn check-title">Retail
+                                Store-Front</label>
+                            <input type="checkbox" name="Retail Store-Front" value="Retail Store-Front"
+                                class="check-btn check" id="Retail Store-Front3">
+                        </div>
+                        <div class="license-check">
+                            <label for="Retail Delivery3" class="check-btn check-title">Retail Delivery</label>
+                            <input type="checkbox" name="Retail Delivery" value="Retail Delivery"
+                                class="check-btn check" id="Retail Delivery3">
+                        </div>
+                    </div>
+
+                    <div class="top-input form-input">
+                        <div class="select-wrapper select-wrapper-full">
+                            <select
+                                name="If you do NOT hold any cannabis licensing, are you currently a Financial Interest Holder or Owner under another CA cannabis licensed entity?">
+                                <option
+                                    value="If you do NOT hold any cannabis licensing, are you currently a Financial Interest Holder or Owner under another CA cannabis licensed entity?">
+                                    If you do NOT hold any cannabis licensing, are you currently a Financial Interest
+                                    Holder or Owner under another CA cannabis licensed entity?</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+
+                            </select>
+                            <i class="fas fa-caret-down" id="conDrop"></i>
+                        </div>
+                    </div>
+
+                    <div class="top-input form-input">
+                        <input type="text" placeholder="If yes, please provide the details of that entity"
+                            autocomplete="off" name="If yes, please provide the details of that entity">
+                    </div>
+
+                    <label class="radio-btn">What Co-Packing Services Are You Interested In?</label>
+
+                    <div class="license-cont">
+                        <div class="license-check">
+                            <label for="Formulations4" class="check-btn check-title">Formulations</label>
+                            <input type="checkbox" name="Cultivation" value="Cultivation" id="Cultivation4"
+                                class="check-btn check">
+                        </div>
+                        <div class="license-check">
+                            <label for="Mixing & Homogenizing4" class="check-btn check-title">Mixing &
+                                Homogenizing</label>
+                            <input type="checkbox" name="Mixing & Homogenizing" value="Mixing & Homogenizing"
+                                class="check-btn check" id="Mixing & Homogenizing4">
+                        </div>
+                        <div class="license-check">
+                            <label for="Filling & Capping4" class="check-btn check-title">Filling & Capping</label>
+                            <input type="checkbox" name="Filling & Capping" value="Filling & Capping"
+                                class="check-btn check" id="Filling & Capping4">
+                        </div>
+                        <div class="license-check">
+                            <label for="Assembly into Packaging4" class="check-btn check-title">Assembly into
+                                Packaging</label>
+                            <input type="checkbox" name="Assembly into Packaging" value="Assembly into Packaging"
+                                class="check-btn check" id="Assembly into Packaging4">
+                        </div>
+                    </div>
+
+                    <div class="license-cont license-cont2">
+                        <div class="license-check">
+                            <label for="Final Form COA of Product4" class="check-btn check-title">Final Form COA of
+                                Product</label>
+                            <input type="checkbox" name="Final Form COA of Product" value="Final Form COA of Product"
+                                id="Final Form COA of Product4" class="check-btn check">
+                        </div>
+                        <div class="license-check license-other">
+                            <label for="Other4" class="check-btn check-title">Other</label>
+                            <div class="top-input form-input">
+                                <input type="text" placeholder="Please Elaborate further" autocomplete="off"
+                                    name="How many grams are you looking to purchase?" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="top-input form-input">
+                        <input type="text" placeholder="What are the products you need Se7enLeaf to co-pack?*"
+                            autocomplete="off" name="What are the products you need Se7enLeaf to co-pack?" required>
+                    </div>
+
+                    <label>What are the volumes for each product type / SKU that you need Se7enLeaf to co-pack? </label>
+
+                    <div class="top-input form-input">
+                        <input type="text" placeholder="Product Type"
+                            autocomplete="off" name="What are the volumes for each product type / SKU that you need Se7enLeaf to co-pack? Product Type:" required>
+                        <input type="text" placeholder="Units"
+                            autocomplete="off" name="What are the volumes for each product type / SKU that you need Se7enLeaf to co-pack? Units" required>
+                    </div>
+                    <div class="top-input form-input">
+                        <input type="text" placeholder="Product Type"
+                            autocomplete="off" name="What are the volumes for each product type / SKU that you need Se7enLeaf to co-pack? Product Type:" required>
+                        <input type="text" placeholder="Units"
+                            autocomplete="off" name="What are the volumes for each product type / SKU that you need Se7enLeaf to co-pack? Units" required>
+                    </div>
+                    <div class="top-input form-input">
+                        <input type="text" placeholder="Product Type"
+                            autocomplete="off" name="What are the volumes for each product type / SKU that you need Se7enLeaf to co-pack? Product Type:" required>
+                        <input type="text" placeholder="Units"
+                            autocomplete="off" name="What are the volumes for each product type / SKU that you need Se7enLeaf to co-pack? Units" required>
+                    </div>
+                    <div class="top-input form-input">
+                        <input type="text" placeholder="Product Type"
+                            autocomplete="off" name="What are the volumes for each product type / SKU that you need Se7enLeaf to co-pack? Product Type:" required>
+                        <input type="text" placeholder="Units"
+                            autocomplete="off" name="What are the volumes for each product type / SKU that you need Se7enLeaf to co-pack? Units" required>
+                    </div>
+                    <div class="top-input form-input">
+                        <input type="text" placeholder="Product Type"
+                            autocomplete="off" name="What are the volumes for each product type / SKU that you need Se7enLeaf to co-pack? Product Type:" required>
+                        <input type="text" placeholder="Units"
+                            autocomplete="off" name="What are the volumes for each product type / SKU that you need Se7enLeaf to co-pack? Units" required>
+                    </div>
+                    <div class="top-input form-input">
+                        <input type="text" placeholder="Product Type"
+                            autocomplete="off" name="What are the volumes for each product type / SKU that you need Se7enLeaf to co-pack? Product Type:" required>
+                        <input type="text" placeholder="Units"
+                            autocomplete="off" name="What are the volumes for each product type / SKU that you need Se7enLeaf to co-pack? Units" required>
+                    </div>
+                    <div class="top-input form-input">
+                        <input type="text" placeholder="Product Type"
+                            autocomplete="off" name="What are the volumes for each product type / SKU that you need Se7enLeaf to co-pack? Product Type:" required>
+                        <input type="text" placeholder="Units"
+                            autocomplete="off" name="What are the volumes for each product type / SKU that you need Se7enLeaf to co-pack? Units" required>
+                    </div>
+                    <div class="top-input form-input">
+                        <input type="text" placeholder="Product Type"
+                            autocomplete="off" name="What are the volumes for each product type / SKU that you need Se7enLeaf to co-pack? Product Type:" required>
+                        <input type="text" placeholder="Units"
+                            autocomplete="off" name="What are the volumes for each product type / SKU that you need Se7enLeaf to co-pack? Units" required>
+                    </div>
+                    
+                    <div class="top-input form-input">
+                        <div class="select-wrapper select-wrapper-full">
+                            <select name="Is this a single order co-packing need or will this be an on-going need? *">
+                                <option value="Is this a single order co-packing need or will this be an on-going need? *">
+                                    Is this a single order co-packing need or will this be an on-going need? *</option>
+                                <option value="Single Order">Single Order</option>
+                                <option value="On-Going">On-Going</option>
+
+                            </select>
+                            <i class="fas fa-caret-down" id="conDrop"></i>
+                        </div>
+
+                    </div>
+
+                    <label>Please provide a brief description of your product hardware and packaging for each SKU and what the general process would be for Se7enLeaf to fill/cap and/or assemble into the proper packaging.</label>
+
+                    <div class="top-input form-input">
+                        <input type="text" placeholder="Enter details here*" autocomplete="off"
+                            name="Please provide a brief description of your product hardware and packaging for each SKU and what the general process would be for Se7enLeaf to fill/cap and/or assemble into the proper packaging." required>
+                    </div>
+
+                    <label>Distribution Information</label>
+
+                    <div class="top-input form-input">
+                        <input type="text" placeholder="Do you have a Distributor in place to pick up your product once Se7enLeaf has finished co-packing?" autocomplete="off"
+                            name="Do you have a Distributor in place to pick up your product once Se7enLeaf has finished co-packing?" required>
+                    </div>
+
+                    <div class="top-input form-input">
+                        <input type="text" placeholder="If so, who is your Distributor(s)?" autocomplete="off"
+                            name="If so, who is your Distributor(s)?" required>
+                    </div>
+
+                    <div class="top-input form-input">
+                        <input type="text" placeholder="Please add any additional notes that you think would be helpful"
+                            name="Please add any additional notes that you think would be helpful" autocomplete="off">
+
+                    </div>
+
+
+
                     <button class="serv-btn contact-serv" type="submit" value="Send">Submit</button>
                     <input type="hidden" name="_next" value="https://johnsonchon.github.io/se7enleaf/contact.html">
                 </form>
