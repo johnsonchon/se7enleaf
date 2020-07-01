@@ -167,7 +167,7 @@ service.addEventListener('change', function (e) {
     bulkCon.classList.add('no-show');
     copackForm.classList.add('no-show');
     whiteBrand.addEventListener('change', function (e) {
-      if (e.target.value === "I have a brand") {
+      if (e.target.value === "I have an existing brand") {
         whiteLabelYes.classList.remove('no-show');
         whiteLabelNo.classList.add('no-show');
         bulkForm.classList.add('no-show');
