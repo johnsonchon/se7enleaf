@@ -168,13 +168,13 @@ service.addEventListener('change', function (e) {
     copackForm.classList.add('no-show');
     extractionForm.classList.add('no-show')
     whiteBrand.addEventListener('change', function (e) {
-      if (e.target.value === "I have an existing brand") {
+      if (e.target.value === "I have an existing cannabis brand in the California marketplace") {
         whiteLabelYes.classList.remove('no-show');
         whiteLabelNo.classList.add('no-show');
         bulkForm.classList.add('no-show');
         
 
-      } else if (e.target.value === "I am introducing a new brand") {
+      } else if (e.target.value === "I am introducing a new cannabis brand to the California marketplace") {
         whiteLabelNo.classList.remove('no-show');
         whiteLabelYes.classList.add('no-show');
         bulkForm.classList.add('no-show');
