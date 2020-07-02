@@ -1692,6 +1692,147 @@ select {
     min-height: 410px;
 }
 
+
+
+
+/* contact drop downs */
+.newform-area {
+    margin-top: 20px;
+}
+label{
+    color: white;
+    font-family: 'bankgothic';
+    display: block;
+    margin: 5px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.extra-drop {
+    margin: 5px;
+    margin-top: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
+.select-wrapper-full {
+    /* width: 100%; */
+    width: calc(100% - 11px);
+    /* box-sizing: border-box; */
+    /* margin-right: 5px; */
+}
+
+.service-drop2 {
+    width: 100%;
+    /* margin-right: 5px; */
+}
+
+.note {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 5px;
+}
+
+.upload {
+    /* background-color: #32A93A; */
+    width: 100%;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    /* margin-top: 15px; */
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.no-show {
+    display: none;
+}
+
+.do-show {
+    display: block;
+}
+
+.main-label {
+    font-size: 21px;
+}
+
+.required {
+    color: red;
+    font-size: 10px;
+}
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+select, input {
+    border: none;
+    /* border-radius: 5px; */
+}
+
+select {
+    color: rgb(113, 113, 113)!important;
+
+}
+
+.radio-btn {
+    margin-bottom: 0;
+}
+
+.check-btn {
+    margin-right: auto;
+    text-align: left;
+    justify-content: left;
+    width: auto;
+    margin-bottom: 5px;
+    margin-left: 0;
+    cursor: pointer;
+}
+
+.check-title {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.license-cont {
+    display: flex;
+    /* margin-left: 5px; */
+}
+
+.license-check {
+    width: 25%;
+}
+
+.license-cont2 {
+    margin-bottom: 20px;
+}
+
+.check::after {
+    background-color: #32A93A;
+}
+
+input[type=checkbox]:checked {
+    background-color: #32A93A;
+}
+
+
+.license-other {
+    width: 75%;
+}
+
+.license50 {
+    width: 50%;
+}
+
+.license100 {
+    width: 100%;
+    margin-left: 0;
+}
+
+.license-100other {
+    margin-top: 5px;
+}
+
+
 /* End product hardware page */
 
 @media only screen and (max-width: 1100px) {   
@@ -1827,6 +1968,7 @@ select {
 
  header {
      background-image: url('./image/home2.png');
+     background-color: #0F0F0F;
  }
 
  video {
@@ -1888,6 +2030,26 @@ select {
      font-size: 12px;
      padding: 10px 40px;
      line-height: 1.5;
+ }
+
+ .button-section {
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     /* width: 100%; */
+ }
+
+ .button-section > a  {
+    width: 280px;
+    box-sizing: border-box;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+ .button-section > a > button {
+     width: 280px;
+     box-sizing: border-box;
+     margin: 0;
  }
 
  .mid-contain {
@@ -2223,6 +2385,18 @@ select {
     border: 0;
 }
 
+.license-cont {
+    flex-direction: column;
+}
+
+.check-title {
+    width: 100%;
+}
+
+.license-check {
+    width: 100%;
+}
+
 /* Formulations - Mobile */
 
 .formu-row {
@@ -2260,140 +2434,3 @@ select {
 }
 }
 
-
-/* contact drop downs */
-.newform-area {
-    margin-top: 20px;
-}
-label{
-    color: white;
-    font-family: 'bankgothic';
-    display: block;
-    margin: 5px;
-    margin-bottom: 15px;
-    margin-top: 30px;
-}
-
-.extra-drop {
-    margin: 5px;
-    margin-top: 0;
-    margin-right: 0;
-    width: 100%;
-}
-
-.select-wrapper-full {
-    /* width: 100%; */
-    width: calc(100% - 11px);
-    /* box-sizing: border-box; */
-    /* margin-right: 5px; */
-}
-
-.service-drop2 {
-    width: 100%;
-    /* margin-right: 5px; */
-}
-
-.note {
-    font-size: 12px;
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 5px;
-}
-
-.upload {
-    /* background-color: #32A93A; */
-    width: 100%;
-    margin-left: 5px;
-    margin-bottom: 20px;
-    /* margin-top: 15px; */
-    box-sizing: border-box;
-    cursor: pointer;
-}
-
-.no-show {
-    display: none;
-}
-
-.do-show {
-    display: block;
-}
-
-.main-label {
-    font-size: 21px;
-}
-
-.required {
-    color: red;
-    font-size: 10px;
-}
-
-textarea {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-select, input {
-    border: none;
-    /* border-radius: 5px; */
-}
-
-select {
-    color: rgb(113, 113, 113)!important;
-
-}
-
-.radio-btn {
-    margin-bottom: 0;
-}
-
-.check-btn {
-    margin-right: auto;
-    text-align: left;
-    justify-content: left;
-    width: auto;
-    margin-bottom: 5px;
-    margin-left: 0;
-    cursor: pointer;
-}
-
-.check-title {
-    margin-top: 20px;
-    font-size: 14px;
-}
-
-.license-cont {
-    display: flex;
-    /* margin-left: 5px; */
-}
-
-.license-check {
-    width: 25%;
-}
-
-.license-cont2 {
-    margin-bottom: 20px;
-}
-
-.check::after {
-    background-color: #32A93A;
-}
-
-input[type=checkbox]:checked {
-    background-color: #32A93A;
-}
-
-
-.license-other {
-    width: 75%;
-}
-
-.license50 {
-    width: 50%;
-}
-
-.license100 {
-    width: 100%;
-    margin-left: 0;
-}
-
-.license-100other {
-    margin-top: 5px;
-}
